@@ -36,3 +36,23 @@ time, mark, audio, video {
         font-size: 5em;
     }
 }
+
+.menu
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    .menu-prev
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.menu-prev img
+{
+    cursor: pointer;
+    max-height: 800px;
+    margin: 40px 0px;
+    box-shadow: 0px 0px 29px -5px rgba(0,0,0,1);
+}
