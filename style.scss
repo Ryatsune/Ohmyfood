@@ -95,9 +95,13 @@ font-size: 2.7em;
     height: 7vh;
     background: #579c87;
     margin-top: 50px;
-    p
+    //position: fixed;
+    //bottom: 0;
+    a
     {
+        color: #fdcb46;
         font-size: 2.3em;
         margin: 0px 20px;
+        text-decoration: none;
     }
 }
