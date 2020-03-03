@@ -64,4 +64,35 @@ time, mark, audio, video {
   -webkit-box-shadow: 0px 0px 29px -5px black;
           box-shadow: 0px 0px 29px -5px black;
 }
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn .btn_soon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+  height: 7vh;
+  background-color: #579c87;
+  margin: 50px 0px;
+  border-radius: 25px;
+}
+
+p {
+  color: #fdcb46;
+  font-size: 2.7em;
+}
 /*# sourceMappingURL=style.css.map */
