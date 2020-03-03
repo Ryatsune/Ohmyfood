@@ -63,6 +63,18 @@ time, mark, audio, video {
   margin: 40px 0px;
   -webkit-box-shadow: 0px 0px 29px -5px black;
           box-shadow: 0px 0px 29px -5px black;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
+  transition: -webkit-transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
+  transition: transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
+  transition: transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91), -webkit-transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
+}
+
+.menu-prev img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.8;
 }
 
 .btn {
