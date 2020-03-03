@@ -95,4 +95,24 @@ p {
   color: #fdcb46;
   font-size: 2.7em;
 }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 7vh;
+  background: #579c87;
+  margin-top: 50px;
+}
+
+.footer p {
+  font-size: 2.3em;
+  margin: 0px 20px;
+}
 /*# sourceMappingURL=style.css.map */
