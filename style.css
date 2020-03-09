@@ -37,34 +37,11 @@ time, mark, audio, video {
 
 .header h1 {
   color: #fdcb46;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 5em;
+  letter-spacing: -3px;
 }
 
-/*.menu
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 50px;
-    .menu-prev
-    {
-        display: flex;
-        justify-content: center;
-    }
-}*/
-/*.menu-prev img
-{
-    cursor: pointer;
-    max-height: 800px;
-    margin: 40px 0px;
-    box-shadow: 0px 0px 29px -5px rgba(0,0,0,1);
-    transform: scale(1);
-    transition: transform 350ms cubic-bezier(.22,.89,.48,.91);
-        &:hover
-        {
-            transform: scale(1.05);
-            opacity: 0.8;
-        }
-}*/
 .menu {
   display: -ms-grid;
   display: grid;
@@ -91,16 +68,97 @@ time, mark, audio, video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
+  transition: -webkit-transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
+  transition: transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
+  transition: transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91), -webkit-transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
   margin-bottom: 100px;
 }
 
+.menu1:hover .zoom, .menu2:hover .zoom, .menu3:hover .zoom, .menu4:hover .zoom {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+  opacity: 0.8;
+}
+
 .menu1 {
-  background-color: #FFCDD2;
+  background-color: #fcdfdb;
 }
 
 .menu1 p {
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  font-family: 'Devonshire', Arial, Helvetica, sans-serif;
+  font-size: 2.3em;
+  background-clip: text;
+  color: transparent;
+  background-color: linear-gradient(#f15861, #f78f6a);
+}
+
+.fas {
+  font-size: 3.5em;
+}
+
+.menu2 {
+  background-color: #fff5fe;
+  font-family: 'Croissant One', Arial, Helvetica, sans-serif;
+}
+
+.menu2 p {
+  font-size: 1.8em;
+  background-color: linear-gradient(#d8852e, #905bfd);
+}
+
+.menu3 {
+  background-color: #f9f9f9;
+  font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+}
+
+.menu3 p {
+  font-size: 2.7em;
+  background-color: linear-gradient(#0431df, #0887fb);
+}
+
+.menu4 {
+  background-color: #fdfffd;
+  font-family: 'Kaushan Script', Arial, Helvetica, sans-serif;
+}
+
+.menu4 p {
+  font-size: 2.4em;
+  background-color: linear-gradient(#3d9339, #bfff7e);
+}
+
+.menu1-font {
+  font-family: 'Sriracha', Arial, Helvetica, sans-serif;
+  font-size: 3em;
+}
+
+.menu2-font {
+  font-family: 'Sriracha', Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  color: #c77412;
+}
+
+.menu3-font {
+  font-family: 'Sriracha', Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  color: #0887fb;
+}
+
+.menu4-font {
+  font-family: 'Sriracha', Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  color: #72bf56;
 }
 
 .zoom {
@@ -117,19 +175,6 @@ time, mark, audio, video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
-  transition: -webkit-transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
-  transition: transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
-  transition: transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91), -webkit-transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
-  color: black;
-}
-
-.zoom:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  opacity: 0.8;
 }
 
 .btn {
@@ -157,9 +202,6 @@ time, mark, audio, video {
   background-color: #579c87;
   margin: 50px 0px;
   border-radius: 25px;
-}
-
-p {
   color: #fdcb46;
   font-size: 2.7em;
 }
