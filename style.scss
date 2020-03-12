@@ -22,6 +22,13 @@ time, mark, audio, video {
     width: 100%;
 }
 
+$logo-text: #fdcb46;
+$green: #579c87;
+$menu1: #fcdfdb;
+$menu2: #fff5fe;
+$menu3: #f9f9f9;
+$menu4: #fdfffd;
+
 .header
 {
     display: flex;
@@ -32,35 +39,155 @@ time, mark, audio, video {
     background: #579c87;
     h1
     {
-        color: #fdcb46;
+        color: $logo-text;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
         font-size: 5em;
+        letter-spacing: -3px;
     }
+}
+
+@mixin center
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin parameter
+{
+    height: 600px;
+    width: 450px;
+    box-shadow: 0px 0px 29px -5px rgba(0,0,0,1);
+    @include center;
+}
+
+@mixin zoom
+{
+    color: black;
+    @include center;
+    transform: scale(1);
+    transition: transform 600ms;
+    &:hover .zoom
+        {
+            transform: scale(1.05);
+            transition: transform 600ms;
+            opacity: 0.8;
+        }
 }
 
 .menu
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 50px;
-    .menu-prev
+    padding: 100px 100px 0px 300px;
+}
+
+.menu1, .menu2, .menu3, .menu4
+{
+    @include parameter;
+    @include zoom;
+    margin-bottom: 100px;
+}
+
+.menu1
+{
+    background-color: #fcdfdb;
+    p
     {
-        display: flex;
-        justify-content: center;
+        font-family: 'Devonshire', Arial, Helvetica, sans-serif;
+        font-size: 2.3em;
     }
 }
 
-.menu-prev img
+.fas
+    {
+        font-size: 3.5em;
+        background: linear-gradient(90deg, #f15861, #f78f6a);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+.menu2
 {
-    cursor: pointer;
-    max-height: 800px;
-    margin: 40px 0px;
-    box-shadow: 0px 0px 29px -5px rgba(0,0,0,1);
+    background-color: #fff5fe;
+    font-family: 'Croissant One', Arial, Helvetica, sans-serif;
+    p
+    {
+        font-size: 1.8em;
+        background: linear-gradient(90deg, #d8852e, #905bfd);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+.menu3
+{
+    background-color: #f9f9f9;
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+    p
+    {
+        font-size: 2.7em;
+        background: linear-gradient(90deg, #0431df, #0887fb);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+.menu4
+{
+    background-color: #fdfffd;
+    font-family: 'Kaushan Script', Arial, Helvetica, sans-serif;
+    p
+    {
+        font-size: 2.4em;
+        background: linear-gradient(90deg, #3d9339, #bfff7e);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+.menu1-font
+{
+    font-family: 'Sriracha', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+.menu2-font
+{
+    font-family: 'Sriracha', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: #c77412;
+}
+
+.menu3-font
+{
+    font-family: 'Sriracha', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: #0887fb;
+}
+
+.menu4-font
+{
+    font-family: 'Sriracha', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: #72bf56;
+}
+
+.zoom
+{
+    @include center;
 }
 
 .btn
 {
     display: flex;
     justify-content: center;
+    margin-bottom: 150px;
     .btn_soon
     {
         display: flex;
@@ -70,15 +197,48 @@ time, mark, audio, video {
         height: 7vh;
         background-color: #579c87;
         margin: 50px 0px;
-        border-radius: 25px
+        border-radius: 25px;
+        color: $logo-text;
+        font-size: 2.7em;
     }
 }
 
-p
+@keyframes dot
 {
-color: #fdcb46;
-font-size: 2.7em;
+    0%
+    {
+        opacity: 1;
+    }
+
+    50%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
 }
+
+.child0
+{
+
+    animation: dot 1.5s infinite;
+
+}
+
+.child1
+{
+    animation: dot 1.4s infinite .7s;
+}
+
+.child2
+{
+    animation: dot 1.4s infinite 1s;
+}
+
+$wiggle-intensity: 4%;
 
 .footer
 {
@@ -86,11 +246,33 @@ font-size: 2.7em;
     justify-content: space-between;
     align-items: center;
     height: 7vh;
+    width: 100%;
     background: #579c87;
     margin-top: 50px;
-    p
+    position: fixed;
+    bottom: 0;
+    a
     {
+        color: #fdcb46;
         font-size: 2.3em;
-        margin: 0px 20px;
+        margin: 0px 40px;
+        text-decoration: none;
+        animation: wiggle 700ms cubic-bezier(.4,.1,.6,.9) infinite alternate;
+    }
+}
+
+@keyframes wiggle
+{
+    0% {
+        transform: translateX(0);
+    }
+    1% {
+        transform: translateX(-$wiggle-intensity);
+    }
+    7%{
+        transform: translateX($wiggle-intensity);
+    }
+    11%{
+        transform: translateX(0);
     }
 }
