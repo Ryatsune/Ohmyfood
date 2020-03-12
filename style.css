@@ -75,10 +75,10 @@ time, mark, audio, video {
   align-items: center;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
-  transition: -webkit-transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
-  transition: transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
-  transition: transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91), -webkit-transform 350ms cubic-bezier(0.22, 0.89, 0.48, 0.91);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
   margin-bottom: 100px;
 }
 
@@ -99,13 +99,15 @@ time, mark, audio, video {
 .menu1 p {
   font-family: 'Devonshire', Arial, Helvetica, sans-serif;
   font-size: 2.3em;
-  background-clip: text;
-  color: transparent;
-  background-color: linear-gradient(#f15861, #f78f6a);
 }
 
 .fas {
   font-size: 3.5em;
+  background: -webkit-gradient(linear, left top, right top, from(#f15861), to(#f78f6a));
+  background: linear-gradient(90deg, #f15861, #f78f6a);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .menu2 {
@@ -115,7 +117,11 @@ time, mark, audio, video {
 
 .menu2 p {
   font-size: 1.8em;
-  background-color: linear-gradient(#d8852e, #905bfd);
+  background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#905bfd));
+  background: linear-gradient(90deg, #d8852e, #905bfd);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .menu3 {
@@ -125,7 +131,11 @@ time, mark, audio, video {
 
 .menu3 p {
   font-size: 2.7em;
-  background-color: linear-gradient(#0431df, #0887fb);
+  background: -webkit-gradient(linear, left top, right top, from(#0431df), to(#0887fb));
+  background: linear-gradient(90deg, #0431df, #0887fb);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .menu4 {
@@ -135,7 +145,11 @@ time, mark, audio, video {
 
 .menu4 p {
   font-size: 2.4em;
-  background-color: linear-gradient(#3d9339, #bfff7e);
+  background: -webkit-gradient(linear, left top, right top, from(#3d9339), to(#bfff7e));
+  background: linear-gradient(90deg, #3d9339, #bfff7e);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .menu1-font {
@@ -206,6 +220,45 @@ time, mark, audio, video {
   font-size: 2.7em;
 }
 
+@-webkit-keyframes dot {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dot {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.child0 {
+  -webkit-animation: dot 1.5s infinite;
+          animation: dot 1.5s infinite;
+}
+
+.child1 {
+  -webkit-animation: dot 1.4s infinite .7s;
+          animation: dot 1.4s infinite .7s;
+}
+
+.child2 {
+  -webkit-animation: dot 1.4s infinite 1s;
+          animation: dot 1.4s infinite 1s;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,32 +287,40 @@ time, mark, audio, video {
 }
 
 @-webkit-keyframes wiggle {
-  30% {
-    -webkit-transform: translateX(1%);
-            transform: translateX(1%);
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
-  50% {
-    -webkit-transform: translateX(inherit);
-            transform: translateX(inherit);
+  1% {
+    -webkit-transform: translateX(-4%);
+            transform: translateX(-4%);
   }
-  70% {
-    -webkit-transform: translateX(-1%);
-            transform: translateX(-1%);
+  7% {
+    -webkit-transform: translateX(4%);
+            transform: translateX(4%);
+  }
+  11% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 @keyframes wiggle {
-  30% {
-    -webkit-transform: translateX(1%);
-            transform: translateX(1%);
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
-  50% {
-    -webkit-transform: translateX(inherit);
-            transform: translateX(inherit);
+  1% {
+    -webkit-transform: translateX(-4%);
+            transform: translateX(-4%);
   }
-  70% {
-    -webkit-transform: translateX(-1%);
-            transform: translateX(-1%);
+  7% {
+    -webkit-transform: translateX(4%);
+            transform: translateX(4%);
+  }
+  11% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 /*# sourceMappingURL=style.css.map */
