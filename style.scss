@@ -276,3 +276,33 @@ $wiggle-intensity: 4%;
         transform: translateX(0);
     }
 }
+
+            /*               Mentions légales               */
+
+$margin: 20px 0px;
+
+.mentions
+{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 300px 150px 300px;
+}
+
+.mentions div
+{
+    margin: $margin;
+}
+
+h2
+{
+    font-size: 2.7em;
+    margin-bottom: 30px;
+}
+
+h3
+{
+    font-size: 1.5em;
+    color: $green;
+    text-decoration: underline $logo-text;
+    margin-bottom: 10px;
+}
