@@ -306,3 +306,84 @@ h3
     text-decoration: underline $logo-text;
     margin-bottom: 10px;
 }
+
+            /*               Contactez-nous               */
+
+            form
+{
+    border: 1px solid $green;
+    padding: 50px;
+    font-size: 1.7em;
+    font-family: 'Bellota Text', Arial, Helvetica, sans-serif;
+}
+
+.contact
+{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 300px 150px 300px;
+    .contact__under
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contact h2
+{
+    color: $green;
+    text-decoration: underline $logo-text;
+}
+
+.contact div
+{
+    margin-bottom: 30px;
+}
+
+#restaurant, #name, #firstname, #email, #tel 
+{
+    border-radius: 50px;
+}
+
+#comment
+{
+    border-radius: 5px;
+}
+
+.civil-state
+{
+    display: flex;
+    div
+    {
+        margin-right: 200px;
+    }
+}
+
+.join
+{
+    display: flex;
+    div
+    {
+        margin-right: 270px;
+    }
+}
+
+.send-btn
+{
+    display: flex;
+    justify-content: center;
+}
+
+.decoration
+{
+    color: $green;
+    text-decoration: underline $logo-text;
+    margin-bottom: 5px;
+}
+
+.required
+{
+    font-size: 0.5em;
+    font-style: italic;
+    font-weight: bold;
+}

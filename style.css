@@ -353,4 +353,93 @@ h3 {
           text-decoration: underline #fdcb46;
   margin-bottom: 10px;
 }
+
+/*               Contactez-nous               */
+form {
+  border: 1px solid #579c87;
+  padding: 50px;
+  font-size: 1.7em;
+  font-family: 'Bellota Text', Arial, Helvetica, sans-serif;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px 300px 150px 300px;
+}
+
+.contact .contact__under {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact h2 {
+  color: #579c87;
+  -webkit-text-decoration: underline #fdcb46;
+          text-decoration: underline #fdcb46;
+}
+
+.contact div {
+  margin-bottom: 30px;
+}
+
+#restaurant, #name, #firstname, #email, #tel {
+  border-radius: 50px;
+}
+
+#comment {
+  border-radius: 5px;
+}
+
+.civil-state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.civil-state div {
+  margin-right: 200px;
+}
+
+.join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.join div {
+  margin-right: 270px;
+}
+
+.send-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.decoration {
+  color: #579c87;
+  -webkit-text-decoration: underline #fdcb46;
+          text-decoration: underline #fdcb46;
+  margin-bottom: 5px;
+}
+
+.required {
+  font-size: 0.5em;
+  font-style: italic;
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
