@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
     
     <title>Contactez-nous</title>
 </head>
@@ -12,38 +12,58 @@
         <header class="header">
             <h1>ohmyfood</h1>
         </header>
-        <section>
+        <section class="contact">
+            <h2>Contactez-nous</h2>
             <form action="traitement.php" method="post">
-                <p>
-                    <label for="name">Nom</label> : <input type="text" name="name" id="name" placeholder="Doe" size="30" maxlength="10" autofocus required/> 
-                </p>
-                <p>
-                    <label for="firstname">Prénom</label> : <input type="text" name="firstname" id="firstname" placeholder="John" size="30" maxlength="10" required/> 
-                </p>
-                <p>
-                    <label for="email">Mail</label> : <input type="email" id="email" placeholder="JohnDoe@gmail.com" required>
-                </p>
-                <p>
-                    <label for="restaurant">Choisissez le restaurant concerné dans cette liste :</label>
-                    <select name="restaurant" id="restaurant" required>
-                        <option value="note">La note enchantée</option>
-                        <option value="chic">Le chic à la française</option>
-                        <option value="delice">Le délice des papilles</option>
-                        <option value="palette">La palette du goût</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="commentaire">Laisser un commentaire :</label>
-                    <textarea name="commentaire" id="commentaire" placeholder="ex: Erreur de commande ; Délais non respectés... etc" cols="30" rows="10" required></textarea>
-                </p>
-                <p>
+                <div>
+                    <div class="contact__under">
+                        <label for="restaurant" class="decoration">Objet du message*</label>
+                        <select name="restaurant" id="restaurant" required>
+                            <option value="incident">Je souhaite déclarer un incident</option>
+                            <option value="wrongorder">Ce n'est pas ce que j'ai commandé</option>
+                            <option value="information">Je souhaites un renseignement</option>
+                            <option value="companymeal">Je souhaites organiser un repas d'entreprise</option>
+                        </select>
+                    </div>
+                    <div class="contact__under">
+                        <label for="restaurant" class="decoration">Choisissez le restaurant concerné dans cette liste*</label>
+                        <select name="restaurant" id="restaurant" required>
+                            <option value="note">La note enchantée</option>
+                            <option value="chic">Le chic à la française</option>
+                            <option value="delice">Le délice des papilles</option>
+                            <option value="palette">La palette du goût</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="civil-state">
+                    <div class="contact__under">
+                        <label for="name" class="decoration">Nom*</label><input type="text" name="name" id="name" placeholder="Doe" size="30" maxlength="10" autofocus required/> 
+                    </div>
+                    <div class="contact__under">
+                        <label for="firstname" class="decoration">Prénom*</label><input type="text" name="firstname" id="firstname" placeholder="John" size="30" maxlength="8" required/> 
+                    </div>
+                </div>
+                <div class="join">
+                    <div class="contact__under">
+                        <label for="email" class="decoration">Adresse email*</label><input type="email" id="email" placeholder="JohnDoe@gmail.com" required>
+                    </div>
+                    <div class="contact__under">
+                        <label for="tel" class="decoration">Téléphone*</label><input type="tel" id="tel" placeholder="06.92.75.33.47">
+                    </div>
+                </div>
+                <div class="contact__under">
+                    <label for="comment" class="decoration">Laisser un commentaire*</label>
+                    <textarea name="comment" id="comment" placeholder="ex: Erreur de commande ; Délais non respectés... etc" cols="100" rows="15" required></textarea>
+                </div>
+                <div class="send-btn">
                     <input type="submit" value="Envoyer">
-                </p>
+                </div>
+                <p class="required">*champ obligatoire</p>
             </form>
         </section>
         <footer class="footer">
-            <a href="mention_legales.html" target="_blank"> Mentions légales</a>
-            <a href="contactez_nous.html" target="_blank"> Contactez-nous</a>
+            <a href="mentions_legales.html" target="_blank"> Mentions légales</a>
+            <a href="contactez-nous.html" target="_blank"> Contactez-nous</a>
         </footer>
     </div>
 </body>
