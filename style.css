@@ -542,4 +542,79 @@ form {
 .down__note .fas {
   font-size: 3.9em;
 }
+
+/*               Le chic à la française               */
+.menu2--modif {
+  background-color: #fff5fe;
+  width: 100%;
+}
+
+.title__chic {
+  margin: 170px 0px 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title__chic h2 {
+  font-family: 'Croissant One', Arial, Helvetica, sans-serif;
+  font-size: 3em;
+  background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#905bfd));
+  background: linear-gradient(90deg, #d8852e, #905bfd);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.subtitle__chic h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px 0px 45px 0px;
+  font-family: 'Noto Serif', Arial, Helvetica, sans-serif;
+  font-size: 1.7em;
+  font-style: bold;
+}
+
+.dishes__chic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 20px 20px 20px;
+}
+
+.dishes__chic li {
+  margin: 5px 0px 30px 70px;
+  list-style-type: none;
+  font-family: 'Noto Serif', Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
+.color__chic1 {
+  color: #d8852e;
+}
+
+.color__chic2 {
+  color: #a56799;
+}
+
+.color__chic3 {
+  color: #6e4ccc;
+}
 /*# sourceMappingURL=style.css.map */
