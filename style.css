@@ -617,4 +617,67 @@ form {
 .color__chic3 {
   color: #6e4ccc;
 }
+
+/*               Le chic à la française               */
+.menu3--modif {
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.title__delice {
+  margin: 170px 0px 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title__delice h2 {
+  font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+  font-size: 5.7em;
+  background: -webkit-gradient(linear, left top, right top, from(#0431df), to(#0887fb));
+  background: linear-gradient(90deg, #0431df, #0887fb);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding: 0px 10px;
+}
+
+.subtitle__delice h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px 0px 45px 0px;
+  font-family: 'Kalam', Arial, Helvetica, sans-serif;
+  font-size: 1.7em;
+}
+
+.dishes__delice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 20px 20px 20px;
+}
+
+.dishes__delice li {
+  margin: 5px 0px 30px 70px;
+  list-style-type: none;
+  font-family: 'Kalam', Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
 /*# sourceMappingURL=style.css.map */
