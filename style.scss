@@ -535,7 +535,7 @@ h2
     color: #6e4ccc;
 }
 
-            /*               Le chic à la française               */
+            /*               Le délice des papilles               */
 
 .menu3--modif
 {
@@ -584,3 +584,54 @@ h2
         font-size: 1.5em;
     }
 }
+
+            /*               La palette du goût               */
+
+.menu4--modif
+{
+    background-color: $menu4;
+    width: 100%;
+}
+
+.title__palette
+{
+margin: 170px 0px 40px 0px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+h2
+    {
+        font-family: 'Kaushan Script', Arial, Helvetica, sans-serif;
+        font-size: 5.7em;
+        background: linear-gradient(90deg, #3d9339, #bfff7e);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        padding: 0px 10px;
+    }
+}
+
+.subtitle__palette h3
+{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px 45px 0px;
+    font-family: 'Kalam', Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+}
+
+.dishes__palette
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 20px 20px;
+    li
+    {
+        margin: 5px 0px 30px 70px;
+        list-style-type: none;
+        font-family: 'Kalam', Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+    }
+}
+
