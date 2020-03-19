@@ -171,12 +171,15 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
 {
     font-family: $sriracha;
     font-size: 3em;
+    font-weight: 100;
 }
 
 .menu2-font
 {
-    font-family: $sriracha;
+    font-family: $noto;
     font-size: 3em;
+    font-weight: 900;
+    padding-top: 20px;
     color: #c77412;
 }
 
@@ -184,6 +187,7 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
 {
     font-family: $sriracha;
     font-size: 3em;
+    font-weight: 100;
     color: #0887fb;
 }
 
@@ -191,6 +195,7 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
 {
     font-family: $sriracha;
     font-size: 3em;
+    font-weight: 100;
     color: #72bf56;
 }
 

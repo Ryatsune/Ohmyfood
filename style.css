@@ -168,23 +168,28 @@ time, mark, audio, video {
 .menu1-font {
   font-family: "Sriracha", Arial, Helvetica, sans-serif;
   font-size: 3em;
+  font-weight: 100;
 }
 
 .menu2-font {
-  font-family: "Sriracha", Arial, Helvetica, sans-serif;
+  font-family: "Noto Serif", Arial, Helvetica, sans-serif;
   font-size: 3em;
+  font-weight: 900;
+  padding-top: 20px;
   color: #c77412;
 }
 
 .menu3-font {
   font-family: "Sriracha", Arial, Helvetica, sans-serif;
   font-size: 3em;
+  font-weight: 100;
   color: #0887fb;
 }
 
 .menu4-font {
   font-family: "Sriracha", Arial, Helvetica, sans-serif;
   font-size: 3em;
+  font-weight: 100;
   color: #72bf56;
 }
 
