@@ -422,6 +422,7 @@ h2
     {
         font-family: $devonshire;
         font-size: 4.3em;
+        font-weight: 300;
     }
     .fas
     {
@@ -430,12 +431,40 @@ h2
     }
 }
 
+.subtitle__note
+{
+    color: #3d1319;
+}
+
 .subtitle__note h3
 {
     @include center;
-    padding-top: 40px;
+    padding: 40px 0px;
     font-family: $kalam;
     font-size: 2.7em;
+    font-weight: 400;
+}
+
+.line
+{
+    display: flex;
+    @include center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 70px;
+}
+
+#Calque_1
+{
+    width: 300px;
+    margin-top: 5px;
+}
+
+#Calque_1-1
+{
+    width: 300px;
+    margin-top: 5px;
+    transform: scaleX(-1);
 }
 
 .dishes
@@ -462,6 +491,7 @@ h2
         padding-left: 20px;
         font-family: $devonshire;
         font-size: 3em;
+        font-weight: 300;
     }
     .fas
     {

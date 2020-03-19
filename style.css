@@ -518,11 +518,16 @@ form {
 .title__note h2 {
   font-family: "Devonshire", Arial, Helvetica, sans-serif;
   font-size: 4.3em;
+  font-weight: 300;
 }
 
 .title__note .fas {
   padding-top: 50px;
   font-size: 6.5em;
+}
+
+.subtitle__note {
+  color: #3d1319;
 }
 
 .subtitle__note h3 {
@@ -539,9 +544,45 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 40px;
+  padding: 40px 0px;
   font-family: "Kalam", Arial, Helvetica, sans-serif;
   font-size: 2.7em;
+  font-weight: 400;
+}
+
+.line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 70px;
+}
+
+#Calque_1 {
+  width: 300px;
+  margin-top: 5px;
+}
+
+#Calque_1-1 {
+  width: 300px;
+  margin-top: 5px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .dishes {
@@ -575,6 +616,7 @@ form {
   padding-left: 20px;
   font-family: "Devonshire", Arial, Helvetica, sans-serif;
   font-size: 3em;
+  font-weight: 300;
 }
 
 .down__note .fas {
