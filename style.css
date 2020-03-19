@@ -168,23 +168,28 @@ time, mark, audio, video {
 .menu1-font {
   font-family: "Sriracha", Arial, Helvetica, sans-serif;
   font-size: 3em;
+  font-weight: 100;
 }
 
 .menu2-font {
-  font-family: "Sriracha", Arial, Helvetica, sans-serif;
+  font-family: "Noto Serif", Arial, Helvetica, sans-serif;
   font-size: 3em;
+  font-weight: 900;
+  padding-top: 20px;
   color: #c77412;
 }
 
 .menu3-font {
   font-family: "Sriracha", Arial, Helvetica, sans-serif;
   font-size: 3em;
+  font-weight: 100;
   color: #0887fb;
 }
 
 .menu4-font {
   font-family: "Sriracha", Arial, Helvetica, sans-serif;
   font-size: 3em;
+  font-weight: 100;
   color: #72bf56;
 }
 
@@ -518,11 +523,16 @@ form {
 .title__note h2 {
   font-family: "Devonshire", Arial, Helvetica, sans-serif;
   font-size: 4.3em;
+  font-weight: 300;
 }
 
 .title__note .fas {
   padding-top: 50px;
   font-size: 6.5em;
+}
+
+.subtitle__note {
+  color: #3d1319;
 }
 
 .subtitle__note h3 {
@@ -539,9 +549,45 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 40px;
+  padding: 40px 0px;
   font-family: "Kalam", Arial, Helvetica, sans-serif;
   font-size: 2.7em;
+  font-weight: 400;
+}
+
+.line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 70px;
+}
+
+#Calque_1 {
+  width: 300px;
+  margin-top: 5px;
+}
+
+#Calque_1-1 {
+  width: 300px;
+  margin-top: 5px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .dishes {
@@ -575,6 +621,7 @@ form {
   padding-left: 20px;
   font-family: "Devonshire", Arial, Helvetica, sans-serif;
   font-size: 3em;
+  font-weight: 300;
 }
 
 .down__note .fas {
@@ -593,7 +640,8 @@ form {
 
 .title__chic h2 {
   font-family: "Croissant One", Arial, Helvetica, sans-serif;
-  font-size: 3em;
+  font-size: 3.1em;
+  font-weight: 300;
   background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#905bfd));
   background: linear-gradient(90deg, #d8852e, #905bfd);
   color: transparent;
@@ -621,6 +669,41 @@ form {
   font-style: bold;
 }
 
+.subtitle__chic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 70px;
+}
+
+#Calque_2 {
+  width: 300px;
+  margin-top: 15px;
+}
+
+#Calque_2-1 {
+  width: 300px;
+  margin-top: 15px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
 .dishes__chic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -628,11 +711,11 @@ form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 150px 20px 120px;
 }
 
 .dishes__chic li {
-  margin: 5px 0px 30px 70px;
+  margin: 10px 0px;
   list-style-type: none;
   font-family: "Noto Serif", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
@@ -663,6 +746,7 @@ form {
 .title__delice h2 {
   font-family: "Dancing Script", Arial, Helvetica, sans-serif;
   font-size: 5.7em;
+  font-weight: 400;
   background: -webkit-gradient(linear, left top, right top, from(#0431df), to(#0887fb));
   background: linear-gradient(90deg, #0431df, #0887fb);
   color: transparent;
@@ -689,6 +773,42 @@ form {
   padding: 60px 0px 45px 0px;
   font-family: "Kalam", Arial, Helvetica, sans-serif;
   font-size: 1.7em;
+  font-weight: 400;
+}
+
+.subtitle__delice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 70px;
+}
+
+#Calque_3 {
+  width: 300px;
+  margin-top: 15px;
+}
+
+#Calque_3-1 {
+  width: 300px;
+  margin-top: 15px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .dishes__delice {
@@ -698,14 +818,14 @@ form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 150px 20px 150px;
 }
 
 .dishes__delice li {
-  margin: 5px 0px 30px 70px;
   list-style-type: none;
   font-family: "Kalam", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
+  margin: 7px 0px;
 }
 
 /*               La palette du goût               */
@@ -724,6 +844,7 @@ form {
   margin: 150px 0px 40px 0px;
   padding: 10px;
   font-size: 5.7em;
+  font-weight: 400;
 }
 
 .subtitle__palette h3 {
@@ -743,6 +864,42 @@ form {
   padding: 60px 0px 45px 0px;
   font-family: "Kalam", Arial, Helvetica, sans-serif;
   font-size: 1.7em;
+  font-weight: 400;
+}
+
+.subtitle__palette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 70px;
+}
+
+#Calque_4 {
+  width: 300px;
+  margin-top: 15px;
+}
+
+#Calque_4-1 {
+  width: 300px;
+  margin-top: 15px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .dishes__palette {
@@ -752,13 +909,13 @@ form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 150px 20px 120px;
 }
 
 .dishes__palette li {
-  margin: 5px 0px 30px 70px;
   list-style-type: none;
   font-family: "Kalam", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
+  margin: 7px 0px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -171,12 +171,15 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
 {
     font-family: $sriracha;
     font-size: 3em;
+    font-weight: 100;
 }
 
 .menu2-font
 {
-    font-family: $sriracha;
+    font-family: $noto;
     font-size: 3em;
+    font-weight: 900;
+    padding-top: 20px;
     color: #c77412;
 }
 
@@ -184,6 +187,7 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
 {
     font-family: $sriracha;
     font-size: 3em;
+    font-weight: 100;
     color: #0887fb;
 }
 
@@ -191,6 +195,7 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
 {
     font-family: $sriracha;
     font-size: 3em;
+    font-weight: 100;
     color: #72bf56;
 }
 
@@ -422,6 +427,7 @@ h2
     {
         font-family: $devonshire;
         font-size: 4.3em;
+        font-weight: 300;
     }
     .fas
     {
@@ -430,12 +436,40 @@ h2
     }
 }
 
+.subtitle__note
+{
+    color: #3d1319;
+}
+
 .subtitle__note h3
 {
     @include center;
-    padding-top: 40px;
+    padding: 40px 0px;
     font-family: $kalam;
     font-size: 2.7em;
+    font-weight: 400;
+}
+
+.line
+{
+    display: flex;
+    @include center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 70px;
+}
+
+#Calque_1
+{
+    width: 300px;
+    margin-top: 5px;
+}
+
+#Calque_1-1
+{
+    width: 300px;
+    margin-top: 5px;
+    transform: scaleX(-1);
 }
 
 .dishes
@@ -462,6 +496,7 @@ h2
         padding-left: 20px;
         font-family: $devonshire;
         font-size: 3em;
+        font-weight: 300;
     }
     .fas
     {
@@ -483,7 +518,8 @@ margin: 170px 0px 40px 0px;
 h2
     {
         font-family: $croissant;
-        font-size: 3em;
+        font-size: 3.1em;
+        font-weight: 300;
         background: linear-gradient(90deg, #d8852e, #905bfd);
         @include transparent;
     }
@@ -498,14 +534,36 @@ h2
     font-style: bold;
 }
 
+.subtitle__chic
+{
+    display: flex;
+    @include center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 70px;
+}
+
+#Calque_2
+{
+    width: 300px;
+    margin-top: 15px;
+}
+
+#Calque_2-1
+{
+    width: 300px;
+    margin-top: 15px;
+    transform: scaleX(-1);
+}
+
 .dishes__chic
 {
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 150px 20px 120px;
     li
     {
-        margin: 5px 0px 30px 70px;
+        margin: 10px 0px;
         list-style-type: none;
         font-family: $noto;
         font-size: 1.5em;
@@ -542,6 +600,7 @@ h2
     {
         font-family: $dancing;
         font-size: 5.7em;
+        font-weight: 400;
         background: linear-gradient(90deg, #0431df, #0887fb);
         color: transparent;
         @include transparent;
@@ -555,19 +614,42 @@ h2
     padding: 60px 0px 45px 0px;
     font-family: $kalam;
     font-size: 1.7em;
+    font-weight: 400;
+}
+
+.subtitle__delice
+{
+    display: flex;
+    @include center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 70px;
+}
+
+#Calque_3
+{
+    width: 300px;
+    margin-top: 15px;
+}
+
+#Calque_3-1
+{
+    width: 300px;
+    margin-top: 15px;
+    transform: scaleX(-1);
 }
 
 .dishes__delice
 {
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 150px 20px 150px;
     li
     {
-        margin: 5px 0px 30px 70px;
         list-style-type: none;
         font-family: $kalam;
         font-size: 1.5em;
+        margin: 7px 0px;
     }
 }
 
@@ -587,6 +669,7 @@ h2
     margin: 150px 0px 40px 0px;
     padding: 10px;
     font-size: 5.7em;
+    font-weight: 400;
 }
 
 .subtitle__palette h3
@@ -595,18 +678,41 @@ h2
     padding: 60px 0px 45px 0px;
     font-family: $kalam;
     font-size: 1.7em;
+    font-weight: 400;
+}
+
+.subtitle__palette
+{
+    display: flex;
+    @include center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 70px;
+}
+
+#Calque_4
+{
+    width: 300px;
+    margin-top: 15px;
+}
+
+#Calque_4-1
+{
+    width: 300px;
+    margin-top: 15px;
+    transform: scaleX(-1);
 }
 
 .dishes__palette
 {
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 150px 20px 120px;
     li
     {
-        margin: 5px 0px 30px 70px;
         list-style-type: none;
         font-family: $kalam;
         font-size: 1.5em;
+        margin: 7px 0px;
     }
 }
