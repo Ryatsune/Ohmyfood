@@ -635,7 +635,8 @@ form {
 
 .title__chic h2 {
   font-family: "Croissant One", Arial, Helvetica, sans-serif;
-  font-size: 3em;
+  font-size: 3.1em;
+  font-weight: 300;
   background: -webkit-gradient(linear, left top, right top, from(#d8852e), to(#905bfd));
   background: linear-gradient(90deg, #d8852e, #905bfd);
   color: transparent;
@@ -705,11 +706,11 @@ form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 150px 20px 120px;
 }
 
 .dishes__chic li {
-  margin: 5px 0px 30px 70px;
+  margin: 10px 0px;
   list-style-type: none;
   font-family: "Noto Serif", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
@@ -819,6 +820,7 @@ form {
   list-style-type: none;
   font-family: "Kalam", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
+  margin: 7px 0px;
 }
 
 /*               La palette du goût               */
@@ -837,6 +839,7 @@ form {
   margin: 150px 0px 40px 0px;
   padding: 10px;
   font-size: 5.7em;
+  font-weight: 400;
 }
 
 .subtitle__palette h3 {
@@ -856,6 +859,42 @@ form {
   padding: 60px 0px 45px 0px;
   font-family: "Kalam", Arial, Helvetica, sans-serif;
   font-size: 1.7em;
+  font-weight: 400;
+}
+
+.subtitle__palette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 70px;
+}
+
+#Calque_4 {
+  width: 300px;
+  margin-top: 15px;
+}
+
+#Calque_4-1 {
+  width: 300px;
+  margin-top: 15px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .dishes__palette {
@@ -865,13 +904,13 @@ form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 150px 20px 120px;
 }
 
 .dishes__palette li {
-  margin: 5px 0px 30px 70px;
   list-style-type: none;
   font-family: "Kalam", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
+  margin: 7px 0px;
 }
 /*# sourceMappingURL=style.css.map */
