@@ -226,7 +226,7 @@ time, mark, audio, video {
   margin-bottom: 150px;
 }
 
-.btn .btn_soon {
+.btn__soon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,6 +247,28 @@ time, mark, audio, video {
   border-radius: 25px;
   color: #fdcb46;
   font-size: 2.7em;
+}
+
+.btn__send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 4vh;
+  background-color: #579c87;
+  border-radius: 10px;
+  color: #fdcb46;
+  font-size: 0.7em;
 }
 
 @-webkit-keyframes dot {
@@ -448,22 +470,10 @@ form {
   margin-right: 270px;
 }
 
-.send-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
+/*.send-btn
+{
+    @include center;
+}*/
 .decoration {
   color: #579c87;
   -webkit-text-decoration: underline #fdcb46;
