@@ -740,6 +740,7 @@ form {
 .title__delice h2 {
   font-family: "Dancing Script", Arial, Helvetica, sans-serif;
   font-size: 5.7em;
+  font-weight: 400;
   background: -webkit-gradient(linear, left top, right top, from(#0431df), to(#0887fb));
   background: linear-gradient(90deg, #0431df, #0887fb);
   color: transparent;
@@ -766,6 +767,42 @@ form {
   padding: 60px 0px 45px 0px;
   font-family: "Kalam", Arial, Helvetica, sans-serif;
   font-size: 1.7em;
+  font-weight: 400;
+}
+
+.subtitle__delice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 70px;
+}
+
+#Calque_3 {
+  width: 300px;
+  margin-top: 15px;
+}
+
+#Calque_3-1 {
+  width: 300px;
+  margin-top: 15px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .dishes__delice {
@@ -775,11 +812,10 @@ form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 150px 20px 150px;
 }
 
 .dishes__delice li {
-  margin: 5px 0px 30px 70px;
   list-style-type: none;
   font-family: "Kalam", Arial, Helvetica, sans-serif;
   font-size: 1.5em;

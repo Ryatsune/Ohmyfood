@@ -594,6 +594,7 @@ h2
     {
         font-family: $dancing;
         font-size: 5.7em;
+        font-weight: 400;
         background: linear-gradient(90deg, #0431df, #0887fb);
         color: transparent;
         @include transparent;
@@ -607,16 +608,39 @@ h2
     padding: 60px 0px 45px 0px;
     font-family: $kalam;
     font-size: 1.7em;
+    font-weight: 400;
+}
+
+.subtitle__delice
+{
+    display: flex;
+    @include center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 70px;
+}
+
+#Calque_3
+{
+    width: 300px;
+    margin-top: 15px;
+}
+
+#Calque_3-1
+{
+    width: 300px;
+    margin-top: 15px;
+    transform: scaleX(-1);
 }
 
 .dishes__delice
 {
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px 20px 20px;
+    padding: 0px 150px 20px 150px;
     li
     {
-        margin: 5px 0px 30px 70px;
+        //margin: 5px 120px 30px 90px;
         list-style-type: none;
         font-family: $kalam;
         font-size: 1.5em;
