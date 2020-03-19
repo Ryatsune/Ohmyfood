@@ -528,6 +528,28 @@ h2
     font-style: bold;
 }
 
+.subtitle__chic
+{
+    display: flex;
+    @include center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 70px;
+}
+
+#Calque_2
+{
+    width: 300px;
+    margin-top: 15px;
+}
+
+#Calque_2-1
+{
+    width: 300px;
+    margin-top: 15px;
+    transform: scaleX(-1);
+}
+
 .dishes__chic
 {
     display: flex;

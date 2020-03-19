@@ -663,6 +663,41 @@ form {
   font-style: bold;
 }
 
+.subtitle__chic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 70px;
+}
+
+#Calque_2 {
+  width: 300px;
+  margin-top: 15px;
+}
+
+#Calque_2-1 {
+  width: 300px;
+  margin-top: 15px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
 .dishes__chic {
   display: -webkit-box;
   display: -ms-flexbox;
