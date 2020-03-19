@@ -208,7 +208,7 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
 {
     @include center;
     margin-bottom: 150px;
-    .btn_soon
+    &__soon
     {
         @include center;
         width: 500px;
@@ -218,6 +218,16 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
         border-radius: 25px;
         color: $logo-text;
         font-size: 2.7em;
+    }
+    &__send
+    {
+        @include center;
+        width: 100px;
+        height: 4vh;
+        background-color: #579c87;
+        border-radius: 10px;
+        color: $logo-text;
+        font-size: 0.7em;
     }
 }
 
@@ -382,10 +392,10 @@ h2
     }
 }
 
-.send-btn
+/*.send-btn
 {
     @include center;
-}
+}*/
 
 .decoration
 {
