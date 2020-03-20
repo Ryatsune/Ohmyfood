@@ -922,4 +922,56 @@ h2
             font-size: 0.7em;
         }
     }
+
+        /* Le délice des papilles */
+
+    .menu3--modif
+    {
+        margin-bottom: 15px;
+    }
+
+    .title__delice
+    {
+        margin: 100px 0px 0px 0px;
+        h2
+        {
+            font-size: 3.6em;
+            padding: 10px;
+        }
+    }
+
+    .subtitle__delice
+    {
+        display: flex;
+        padding: 10px;
+        margin: 0px;
+        h3
+        {
+            justify-content: center;
+            padding: 10px 0px 0px 0px;
+            font-size: 0.7em;
+            width: 100px;
+        }
+        #Calque_3, #Calque_3-1
+        {
+            width: 90px;
+        }
+    }
+
+    .dishes__delice
+    {
+        padding: 10px;
+        li
+        {
+            font-size: 0.7em;
+        }
+    }
+
+    .prices
+    {
+        li
+        {  
+            padding-bottom: 8px;
+        }
+    }
 }

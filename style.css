@@ -1064,5 +1064,43 @@ form {
   .dishes__chic li {
     font-size: 0.7em;
   }
+  /* Le délice des papilles */
+  .menu3--modif {
+    margin-bottom: 15px;
+  }
+  .title__delice {
+    margin: 100px 0px 0px 0px;
+  }
+  .title__delice h2 {
+    font-size: 3.6em;
+    padding: 10px;
+  }
+  .subtitle__delice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    margin: 0px;
+  }
+  .subtitle__delice h3 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0px 0px 0px;
+    font-size: 0.7em;
+    width: 100px;
+  }
+  .subtitle__delice #Calque_3, .subtitle__delice #Calque_3-1 {
+    width: 90px;
+  }
+  .dishes__delice {
+    padding: 10px;
+  }
+  .dishes__delice li {
+    font-size: 0.7em;
+  }
+  .prices li {
+    padding-bottom: 8px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
