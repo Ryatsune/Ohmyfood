@@ -1036,5 +1036,33 @@ form {
   .down__note .fas {
     font-size: 4;
   }
+  /* Le chic à la française */
+  .menu2--modif {
+    margin-bottom: 15px;
+  }
+  .title__chic {
+    margin: 100px 0px 40px 0px;
+  }
+  .title__chic h2 {
+    padding-left: 55px;
+  }
+  .subtitle__chic {
+    padding: 10px;
+    margin: 0px;
+  }
+  .subtitle__chic h3 {
+    padding: 10px 0px 0px 0px;
+    font-size: 0.7em;
+    width: 100px;
+  }
+  .subtitle__chic #Calque_2, .subtitle__chic #Calque_2-1 {
+    width: 90px;
+  }
+  .dishes__chic {
+    padding: 10px;
+  }
+  .dishes__chic li {
+    font-size: 0.7em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
