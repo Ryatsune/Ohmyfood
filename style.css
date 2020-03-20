@@ -1076,16 +1076,10 @@ form {
     padding: 10px;
   }
   .subtitle__delice {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding: 10px;
     margin: 0px;
   }
   .subtitle__delice h3 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding: 10px 0px 0px 0px;
     font-size: 0.7em;
     width: 100px;
@@ -1101,6 +1095,36 @@ form {
   }
   .prices li {
     padding-bottom: 8px;
+  }
+  /* La palette du goût */
+  .menu4--modif {
+    margin-bottom: 15px;
+  }
+  .title__palette {
+    margin: 100px 0px 0px 0px;
+  }
+  .title__palette h2 {
+    margin: 0px 0px 40px 0px;
+    font-size: 3.6em;
+    padding: 10px;
+  }
+  .subtitle__palette {
+    padding: 10px;
+    margin: 0px;
+  }
+  .subtitle__palette h3 {
+    padding: 10px 0px 0px 0px;
+    font-size: 0.9em;
+    width: 100px;
+  }
+  .subtitle__palette #Calque_4, .subtitle__palette #Calque_4-1 {
+    width: 90px;
+  }
+  .dishes__palette {
+    padding: 10px;
+  }
+  .dishes__palette li {
+    font-size: 0.7em;
   }
 }
 /*# sourceMappingURL=style.css.map */

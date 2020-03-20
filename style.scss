@@ -942,12 +942,10 @@ h2
 
     .subtitle__delice
     {
-        display: flex;
         padding: 10px;
         margin: 0px;
         h3
         {
-            justify-content: center;
             padding: 10px 0px 0px 0px;
             font-size: 0.7em;
             width: 100px;
@@ -972,6 +970,49 @@ h2
         li
         {  
             padding-bottom: 8px;
+        }
+    }
+
+        /* La palette du goût */
+
+    .menu4--modif
+    {
+        margin-bottom: 15px;
+    }
+
+    .title__palette
+    {
+        margin: 100px 0px 0px 0px;
+        h2
+        {
+            margin: 0px 0px 40px 0px;
+            font-size: 3.6em;
+            padding: 10px;
+        }
+    }
+
+    .subtitle__palette
+    {
+        padding: 10px;
+        margin: 0px;
+        h3
+        {
+            padding: 10px 0px 0px 0px;
+            font-size: 0.9em;
+            width: 100px;
+        }
+        #Calque_4, #Calque_4-1
+        {
+            width: 90px;
+        }
+    }
+
+    .dishes__palette
+    {
+        padding: 10px;
+        li
+        {
+            font-size: 0.7em;
         }
     }
 }
