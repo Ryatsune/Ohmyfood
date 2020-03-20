@@ -387,7 +387,7 @@ time, mark, audio, video {
   padding: 100px 300px 150px 300px;
 }
 
-.mentions div {
+.mentions section {
   margin: 20px 0px;
 }
 
@@ -470,10 +470,6 @@ form {
   margin-right: 270px;
 }
 
-/*.send-btn
-{
-    @include center;
-}*/
 .decoration {
   color: #579c87;
   -webkit-text-decoration: underline #fdcb46;

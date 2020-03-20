@@ -12,10 +12,10 @@
         <header class="header">
             <h1>ohmyfood</h1>
         </header>
-        <section class="contact">
+        <main class="contact">
             <h2>Contactez-nous</h2>
             <form action="traitement.php" method="post">
-                <div>
+                <section>
                     <div class="contact__under">
                         <label for="restaurant" class="decoration">Objet du message*</label>
                         <select name="restaurant" id="restaurant" required>
@@ -34,23 +34,23 @@
                             <option value="palette">La palette du goût</option>
                         </select>
                     </div>
-                </div>
-                <div class="civil-state">
+                </section>
+                <section class="civil-state">
                     <div class="contact__under">
                         <label for="name" class="decoration">Nom*</label><input type="text" name="name" id="name" placeholder="Doe" size="30" maxlength="10" autofocus required/> 
                     </div>
                     <div class="contact__under">
                         <label for="firstname" class="decoration">Prénom*</label><input type="text" name="firstname" id="firstname" placeholder="John" size="30" maxlength="8" required/> 
                     </div>
-                </div>
-                <div class="join">
+                </section>
+                <section class="join">
                     <div class="contact__under">
                         <label for="email" class="decoration">Adresse email*</label><input type="email" id="email" placeholder="JohnDoe@gmail.com" required>
                     </div>
                     <div class="contact__under">
                         <label for="tel" class="decoration">Téléphone*</label><input type="tel" id="tel" placeholder="06.92.75.33.47">
                     </div>
-                </div>
+                </section>
                 <div class="contact__under">
                     <label for="comment" class="decoration">Laisser un commentaire*</label>
                     <textarea name="comment" id="comment" placeholder="ex: Erreur de commande ; Délais non respectés... etc" cols="100" rows="15" required></textarea>
@@ -60,7 +60,7 @@
                 </div>
                 <p class="required">*champ obligatoire</p>
             </form>
-        </section>
+        </main>
         <footer class="footer">
             <a href="mentions_legales.html" target="_blank"> Mentions légales</a>
             <a href="contactez-nous.html" target="_blank"> Contactez-nous</a>

@@ -314,7 +314,7 @@ $wiggle-intensity: 4%;
     padding: 100px 300px 150px 300px;
 }
 
-.mentions div
+.mentions section
 {
     margin: 20px 0px;
 }
@@ -391,11 +391,6 @@ h2
         margin-right: 270px;
     }
 }
-
-/*.send-btn
-{
-    @include center;
-}*/
 
 .decoration
 {
@@ -605,17 +600,17 @@ h2
 
 .title__delice
 {
-margin: 170px 0px 40px 0px;
-h2
-    {
-        font-family: $dancing;
-        font-size: 5.7em;
-        font-weight: 400;
-        background: linear-gradient(90deg, #0431df, #0887fb);
-        color: transparent;
-        @include transparent;
-        padding: 10px
-    }
+    margin: 170px 0px 40px 0px;
+    h2
+        {
+            font-family: $dancing;
+            font-size: 5.7em;
+            font-weight: 400;
+            background: linear-gradient(90deg, #0431df, #0887fb);
+            color: transparent;
+            @include transparent;
+            padding: 10px
+        }
 }
 
 .subtitle__delice h3
