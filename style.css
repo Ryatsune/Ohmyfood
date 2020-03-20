@@ -924,4 +924,40 @@ form {
   font-size: 1.5em;
   margin: 7px 0px;
 }
+
+/*               Media Queries               */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header {
+    width: 100%;
+    font-size: 0.8em;
+  }
+  .menu {
+    -ms-grid-columns: 95%;
+        grid-template-columns: 95%;
+    -ms-grid-rows: (300px)[4];
+        grid-template-rows: repeat(4, 300px);
+    grid-row-gap: 2em;
+    padding: 40px 0px 0px 15px;
+  }
+  .menu1, .menu2, .menu3, .menu4 {
+    width: 95%;
+    height: 100%;
+    margin-left: 8px;
+  }
+  .menu1 .zoom, .menu2 .zoom, .menu3 .zoom, .menu4 .zoom {
+    font-size: 0.7em;
+  }
+  .btn {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .btn__soon {
+    width: 70%;
+    font-size: 1em;
+  }
+  .footer a {
+    font-size: 1em;
+    margin: 0px 5px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
