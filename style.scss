@@ -822,4 +822,62 @@ h2
     {
         font-size: 0.5em;
     }
+
+        /* La note enchantée */
+
+     .details
+     {
+       padding: 0px 0px 50px 0px;
+     }
+
+     .title
+     {
+         font-size: 0.7em;
+         .fas
+         {
+             font-size: 4;
+         }
+     }
+
+     .line
+     {
+         margin: 10px;
+         h3
+         {
+            font-size: 1.3em;
+            width: 100px;
+            padding: 10px;
+         }
+     }
+
+     .dishes
+    {
+        padding: 0px 10px;
+        .dishes__details
+        {
+            padding: 3px 5px 0px 0px;
+        }
+        li
+        {
+            font-size: 0.7em;
+            margin: 0px 0px 10px 0px;
+        }
+        .prices
+        {
+            li
+            {
+                padding: 5px 0px;
+            }
+        }
+    }
+
+    .down__note
+    {
+        font-size: 0.7em;
+        margin: 40px 0px;
+        .fas
+        {
+            font-size: 4;
+        }
+    }
 }
