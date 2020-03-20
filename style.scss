@@ -723,13 +723,18 @@ h2
 }
 
             /*               Media Queries               */
+        /* Acceuil */
 
-@media screen and (min-width: 320px) and (max-width: 768px)
+@media screen and (min-width: 320px) and (max-width: 767px)
 {
     .header
     {
         width: 100%;
         font-size: 0.8em;
+        h1
+        {
+            font-size: 4em;
+        }
     }
 
     .menu
@@ -769,5 +774,16 @@ h2
             font-size: 1em;
             margin: 0px 5px;
         }
+    }
+}
+
+        /* Mentions légales */
+
+.mentions
+{
+    padding: 10px 10px 100px 10px;
+    h2
+    {
+        font-size: 2.5em;
     }
 }

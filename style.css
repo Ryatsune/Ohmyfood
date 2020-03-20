@@ -926,10 +926,14 @@ form {
 }
 
 /*               Media Queries               */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+/* Acceuil */
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
     width: 100%;
     font-size: 0.8em;
+  }
+  .header h1 {
+    font-size: 4em;
   }
   .menu {
     -ms-grid-columns: 95%;
@@ -959,5 +963,14 @@ form {
     font-size: 1em;
     margin: 0px 5px;
   }
+}
+
+/* Mentions légales */
+.mentions {
+  padding: 10px 10px 100px 10px;
+}
+
+.mentions h2 {
+  font-size: 2.5em;
 }
 /*# sourceMappingURL=style.css.map */
