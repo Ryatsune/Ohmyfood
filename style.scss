@@ -775,15 +775,51 @@ h2
             margin: 0px 5px;
         }
     }
-}
 
         /* Mentions légales */
 
-.mentions
-{
-    padding: 10px 10px 100px 10px;
-    h2
+    .mentions
     {
-        font-size: 2.5em;
+        padding: 10px 10px 100px 10px;
+        h2
+        {
+            font-size: 2.5em;
+        }
+    }
+
+        /* Contactez-nous */
+
+    .contact
+    {
+        padding: 10px 10px 100px 10px;
+        h2
+        {
+            font-size: 2.5em;
+        }
+    }
+
+    form
+    {
+        padding: 10px;
+    }
+
+    .civil-state
+    {
+        flex-direction: column;
+    }
+
+    #name, #firstname, #email, #tel
+    {
+        min-width: 270px;
+    }
+
+    .join
+    {
+        flex-direction: column;
+    }
+
+    .decoration, .btn__send
+    {
+        font-size: 0.5em;
     }
 }
