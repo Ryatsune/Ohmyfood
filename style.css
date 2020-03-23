@@ -244,7 +244,7 @@ time, mark, audio, video {
   height: 7vh;
   background-color: #579c87;
   margin: 50px 0px;
-  border-radius: 25px;
+  border-radius: 15px;
   color: #fdcb46;
   font-size: 2.7em;
 }
@@ -927,7 +927,10 @@ form {
 
 /*               Media Queries               */
 /* Acceuil */
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .container {
+    width: auto;
+  }
   .header {
     width: 100%;
     font-size: 0.8em;
@@ -1125,6 +1128,49 @@ form {
   }
   .dishes__palette li {
     font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* Acceuil */
+  .container {
+    width: 100%;
+  }
+  .header h1 {
+    font-size: 3.8em;
+  }
+  .menu {
+    -ms-grid-columns: (300px)[2];
+        grid-template-columns: repeat(2, 300px);
+    -ms-grid-rows: 400px;
+        grid-template-rows: 400px;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    padding: 40px 60px 0px 60px;
+  }
+  .menu1, .menu2, .menu3, .menu4 {
+    width: auto;
+    height: 400px;
+    margin-bottom: 0px;
+  }
+  .menu1 a, .menu2 a, .menu3 a, .menu4 a {
+    font-size: 1.8em;
+  }
+  .menu1 span, .menu2 span, .menu3 span, .menu4 span {
+    font-size: 2.4em;
+  }
+  .menu2 a {
+    font-size: 1.4em;
+  }
+  .btn {
+    margin-bottom: 70px;
+  }
+  .btn__soon {
+    width: 350px;
+    font-size: 1.9em;
+  }
+  .btn a {
+    font-size: 1.9em;
   }
 }
 /*# sourceMappingURL=style.css.map */
