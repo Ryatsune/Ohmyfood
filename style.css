@@ -244,7 +244,7 @@ time, mark, audio, video {
   height: 7vh;
   background-color: #579c87;
   margin: 50px 0px;
-  border-radius: 25px;
+  border-radius: 15px;
   color: #fdcb46;
   font-size: 2.7em;
 }
@@ -923,5 +923,344 @@ form {
   font-family: "Kalam", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   margin: 7px 0px;
+}
+
+/*               Media Queries               */
+@media screen and (max-width: 1023px) {
+  /* Acceuil */
+  .container {
+    width: 100%;
+  }
+  .header h1 {
+    font-size: 3.8em;
+  }
+  .menu {
+    -ms-grid-columns: (300px)[2];
+        grid-template-columns: repeat(2, 300px);
+    -ms-grid-rows: 400px;
+        grid-template-rows: 400px;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    padding: 40px 60px 0px 60px;
+  }
+  .menu1, .menu2, .menu3, .menu4 {
+    width: auto;
+    height: 400px;
+    margin-bottom: 0px;
+  }
+  .menu1 a, .menu2 a, .menu3 a, .menu4 a {
+    font-size: 1.8em;
+  }
+  .menu1 span, .menu2 span, .menu3 span, .menu4 span {
+    font-size: 2.4em;
+  }
+  .menu2 a {
+    font-size: 1.4em;
+  }
+  .btn {
+    margin-bottom: 70px;
+  }
+  .btn__soon {
+    width: 350px;
+    font-size: 1.9em;
+  }
+  .footer a {
+    font-size: 1.9em;
+  }
+  /* Mentions légales */
+  .mentions {
+    padding: 40px 40px 80px 40px;
+  }
+  /* Contactez-nous */
+  .contact {
+    padding: 40px 20px 80px 20px;
+  }
+  .contact .civil-state div {
+    margin-right: 131px;
+  }
+  .contact .join div {
+    margin-right: 200px;
+  }
+  /* La note enchantée */
+  .details {
+    padding: 10px 10px 70px 10px;
+  }
+  .details .prices li {
+    padding: 10px 0px 15px 0px;
+  }
+  /* Le chic à la française */
+  .menu2--modif li {
+    font-size: 1.3em;
+  }
+  .subtitle__chic h3 {
+    margin: 0px 10px 0px 20px;
+    font-size: 1.5em;
+  }
+  .dishes__chic {
+    padding: 0px;
+  }
+  .dishes__chic .dishes__details li {
+    padding-bottom: 15px;
+  }
+  .dishes__chic .prices li {
+    padding: 0px 0px 15px 0px;
+  }
+  /* Le délice des papilles */
+  .title__delice {
+    margin: 100px 0px 40px 0px;
+  }
+  .title__delice h2 {
+    font-size: 4em;
+  }
+  .subtitle__delice h3 {
+    margin-left: 20px;
+    font-size: 1.5em;
+  }
+  .dishes__delice {
+    padding: 10px;
+  }
+  .dishes__delice .dishes__details li {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+  .dishes__delice .prices li {
+    font-size: 1.3em;
+    margin: 0px;
+    padding: 5px 0px 12px 0px;
+  }
+  /* Le délice des papilles */
+  .title__palette {
+    margin: 100px 0px 40px 0px;
+  }
+  .title__palette h2 {
+    font-size: 4em;
+    margin: 0px;
+  }
+  .subtitle__palette {
+    margin: 0px 30px;
+  }
+  .subtitle__palette h3 {
+    margin: 0px 30px;
+  }
+  .dishes__palette {
+    padding: 10px;
+  }
+  .dishes__palette .dishes__details li {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+  }
+  .dishes__palette .prices li {
+    font-size: 1.3em;
+    margin: 0px;
+  }
+  .dishes__palette li {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+  }
+}
+
+/* Acceuil */
+@media screen and (max-width: 767px) {
+  .container {
+    width: auto;
+  }
+  .header {
+    width: 100%;
+    font-size: 0.8em;
+  }
+  .header h1 {
+    font-size: 4em;
+  }
+  .menu {
+    -ms-grid-columns: 95%;
+        grid-template-columns: 95%;
+    -ms-grid-rows: (300px)[4];
+        grid-template-rows: repeat(4, 300px);
+    grid-row-gap: 2em;
+    padding: 40px 0px 0px 15px;
+  }
+  .menu1, .menu2, .menu3, .menu4 {
+    width: 95%;
+    height: 100%;
+    margin-left: 8px;
+  }
+  .menu1 .zoom, .menu2 .zoom, .menu3 .zoom, .menu4 .zoom {
+    font-size: 0.7em;
+  }
+  .btn {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .btn__soon {
+    width: 70%;
+    font-size: 1em;
+  }
+  .footer a {
+    font-size: 1em;
+    margin: 0px 5px;
+  }
+  /* Mentions légales */
+  .mentions {
+    padding: 10px 10px 100px 10px;
+  }
+  .mentions h2 {
+    font-size: 2.5em;
+  }
+  /* Contactez-nous */
+  .contact {
+    padding: 10px 10px 100px 10px;
+  }
+  .contact h2 {
+    font-size: 2.5em;
+  }
+  form {
+    padding: 10px;
+  }
+  .civil-state {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #name, #firstname, #email, #tel {
+    min-width: 270px;
+  }
+  .join {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .decoration, .btn__send {
+    font-size: 0.5em;
+  }
+  /* La note enchantée */
+  .details {
+    padding: 0px 0px 50px 0px;
+  }
+  .title {
+    font-size: 0.7em;
+  }
+  .title .fas {
+    font-size: 4;
+  }
+  .line {
+    margin: 10px;
+  }
+  .line h3 {
+    font-size: 1.3em;
+    width: 100px;
+    padding: 10px;
+  }
+  .dishes {
+    padding: 0px 10px;
+  }
+  .dishes .dishes__details {
+    padding: 3px 5px 0px 0px;
+  }
+  .dishes li {
+    font-size: 0.7em;
+    margin: 0px 0px 10px 0px;
+  }
+  .dishes .prices li {
+    padding: 5px 0px;
+  }
+  .down__note {
+    font-size: 0.7em;
+    margin: 40px 0px;
+  }
+  .down__note .fas {
+    font-size: 4;
+  }
+  /* Le chic à la française */
+  .menu2--modif {
+    margin-bottom: 15px;
+  }
+  .title__chic {
+    margin: 100px 0px 40px 0px;
+  }
+  .title__chic h2 {
+    padding-left: 55px;
+  }
+  .subtitle__chic {
+    padding: 10px;
+    margin: 0px;
+  }
+  .subtitle__chic h3 {
+    padding: 10px 0px 0px 0px;
+    font-size: 0.7em;
+    width: 100px;
+  }
+  .subtitle__chic #Calque_2, .subtitle__chic #Calque_2-1 {
+    width: 90px;
+  }
+  .dishes__chic {
+    padding: 10px;
+  }
+  .dishes__chic li {
+    font-size: 0.7em;
+  }
+  /* Le délice des papilles */
+  .menu3--modif {
+    margin-bottom: 15px;
+  }
+  .title__delice {
+    margin: 100px 0px 0px 0px;
+  }
+  .title__delice h2 {
+    font-size: 3.6em;
+    padding: 10px;
+  }
+  .subtitle__delice {
+    padding: 10px;
+    margin: 0px;
+  }
+  .subtitle__delice h3 {
+    padding: 10px 0px 0px 0px;
+    font-size: 0.7em;
+    width: 100px;
+  }
+  .subtitle__delice #Calque_3, .subtitle__delice #Calque_3-1 {
+    width: 90px;
+  }
+  .dishes__delice {
+    padding: 10px;
+  }
+  .dishes__delice li {
+    font-size: 0.7em;
+  }
+  .prices li {
+    padding-bottom: 8px;
+  }
+  /* La palette du goût */
+  .menu4--modif {
+    margin-bottom: 15px;
+  }
+  .title__palette {
+    margin: 100px 0px 0px 0px;
+  }
+  .title__palette h2 {
+    margin: 0px 0px 40px 0px;
+    font-size: 3.6em;
+    padding: 10px;
+  }
+  .subtitle__palette {
+    padding: 10px;
+    margin: 0px;
+  }
+  .subtitle__palette h3 {
+    padding: 10px 0px 0px 0px;
+    font-size: 0.9em;
+    width: 100px;
+  }
+  .subtitle__palette #Calque_4, .subtitle__palette #Calque_4-1 {
+    width: 90px;
+  }
+  .dishes__palette {
+    padding: 10px;
+  }
+  .dishes__palette li {
+    font-size: 0.7em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
