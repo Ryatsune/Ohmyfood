@@ -74,6 +74,20 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
     background-clip: text;
 }
 
+@mixin effect
+{
+    cursor: pointer;
+    background-size: 0 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 1%, transparent 4%) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 0.3s;
+    &:hover
+    {
+        background-size: 100% 100%;
+    }
+}
+
+
             /*               Acceuil               */
 
 .container
@@ -449,10 +463,11 @@ h2
 .subtitle__note h3
 {
     @include center;
-    padding: 40px 0px;
+    padding-top: 35px;
     font-family: $kalam;
     font-size: 2.7em;
     font-weight: 400;
+    @include effect;
 }
 
 .line
@@ -467,13 +482,13 @@ h2
 #Calque_1
 {
     width: 300px;
-    margin-top: 5px;
+    margin-top: 30px;
 }
 
 #Calque_1-1
 {
     width: 300px;
-    margin-top: 5px;
+    margin-top: 30px;
     transform: scaleX(-1);
 }
 
@@ -481,7 +496,7 @@ h2
 {
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px 20px 20px;
+    padding: 30px 20px 20px 20px;
     li
     {
         margin: 5px 40px;
@@ -533,10 +548,11 @@ h2
 .subtitle__chic h3
 {
     @include center;
-    padding: 60px 0px 45px 0px;
+    padding: 60px 0px 2px 0px;
     font-family: $noto;
     font-size: 1.7em;
     font-style: bold;
+    @include effect;
 }
 
 .subtitle__chic
@@ -551,13 +567,13 @@ h2
 #Calque_2
 {
     width: 300px;
-    margin-top: 15px;
+    margin-top: 60px;
 }
 
 #Calque_2-1
 {
     width: 300px;
-    margin-top: 15px;
+    margin-top: 60px;
     transform: scaleX(-1);
 }
 
@@ -565,7 +581,7 @@ h2
 {
     display: flex;
     justify-content: space-between;
-    padding: 0px 150px 20px 120px;
+    padding: 40px 150px 20px 120px;
     li
     {
         margin: 10px 0px;
@@ -616,10 +632,11 @@ h2
 .subtitle__delice h3
 {
     @include center;
-    padding: 60px 0px 45px 0px;
+    padding: 60px 0px 2px 0px;
     font-family: $kalam;
     font-size: 1.7em;
     font-weight: 400;
+    @include effect;
 }
 
 .subtitle__delice
@@ -634,13 +651,13 @@ h2
 #Calque_3
 {
     width: 300px;
-    margin-top: 15px;
+    margin-top: 60px;
 }
 
 #Calque_3-1
 {
     width: 300px;
-    margin-top: 15px;
+    margin-top: 60px;
     transform: scaleX(-1);
 }
 
@@ -648,7 +665,7 @@ h2
 {
     display: flex;
     justify-content: space-between;
-    padding: 0px 150px 20px 150px;
+    padding: 40px 150px 20px 150px;
     li
     {
         list-style-type: none;
@@ -680,10 +697,11 @@ h2
 .subtitle__palette h3
 {
     @include center;
-    padding: 60px 0px 45px 0px;
+    padding: 60px 0px 2px 0px;
     font-family: $kalam;
     font-size: 1.7em;
     font-weight: 400;
+    @include effect;
 }
 
 .subtitle__palette
@@ -698,13 +716,13 @@ h2
 #Calque_4
 {
     width: 300px;
-    margin-top: 15px;
+    margin-top: 60px;
 }
 
 #Calque_4-1
 {
     width: 300px;
-    margin-top: 15px;
+    margin-top: 60px;
     transform: scaleX(-1);
 }
 
@@ -712,7 +730,7 @@ h2
 {
     display: flex;
     justify-content: space-between;
-    padding: 0px 150px 20px 120px;
+    padding: 40px 150px 20px 120px;
     li
     {
         list-style-type: none;
