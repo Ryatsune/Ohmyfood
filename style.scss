@@ -74,6 +74,16 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
     background-clip: text;
 }
 
+@mixin effect
+{
+    &:hover
+    {
+        background: linear-gradient(to top, #000 0%, #000 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+        transition: background-size 0.5s;
+    }
+}
+
+
             /*               Acceuil               */
 
 .container
@@ -449,10 +459,19 @@ h2
 .subtitle__note h3
 {
     @include center;
-    padding: 40px 0px;
+    padding-top: 35px;
     font-family: $kalam;
     font-size: 2.7em;
     font-weight: 400;
+    cursor: pointer;
+    background-size: 0 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 1%, transparent 4%) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 0.3s;
+    &:hover
+    {
+        background-size: 100% 100%;
+    }
 }
 
 .line
@@ -481,7 +500,7 @@ h2
 {
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     li
     {
         margin: 5px 40px;

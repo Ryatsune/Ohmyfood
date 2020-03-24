@@ -555,10 +555,21 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0px;
+  padding-top: 35px;
   font-family: "Kalam", Arial, Helvetica, sans-serif;
   font-size: 2.7em;
   font-weight: 400;
+  cursor: pointer;
+  background-size: 0 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), color-stop(1%, rgba(0, 0, 0, 0.7)), color-stop(4%, transparent)) no-repeat;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 1%, transparent 4%) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+.subtitle__note h3:hover {
+  background-size: 100% 100%;
 }
 
 .line {
@@ -603,7 +614,7 @@ form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 .dishes li {
