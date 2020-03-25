@@ -985,7 +985,7 @@ form {
         grid-template-rows: 400px;
     grid-column-gap: 60px;
     grid-row-gap: 60px;
-    padding: 40px 60px 0px 60px;
+    padding: 40px 50px 0px 50px;
   }
   .menu1, .menu2, .menu3, .menu4 {
     width: auto;
@@ -1035,6 +1035,7 @@ form {
   /* Le chic à la française */
   .menu2--modif li {
     font-size: 1.3em;
+    padding: 10px;
   }
   .subtitle__chic h3 {
     margin: 0px 10px 0px 20px;
@@ -1224,7 +1225,7 @@ form {
     margin: 100px 0px 40px 0px;
   }
   .title__chic h2 {
-    padding-left: 55px;
+    font-size: 2.5em;
   }
   .subtitle__chic {
     padding: 10px;
@@ -1270,11 +1271,15 @@ form {
   .dishes__delice {
     padding: 10px;
   }
-  .dishes__delice li {
+  .dishes__delice .dishes__details li {
     font-size: 0.7em;
   }
-  .prices li {
+  .dishes__delice .prices li {
+    font-size: 0.7em;
     padding-bottom: 8px;
+  }
+  .dishes__delice li {
+    font-size: 0.7em;
   }
   /* La palette du goût */
   .menu4--modif {
@@ -1302,6 +1307,12 @@ form {
   }
   .dishes__palette {
     padding: 10px;
+  }
+  .dishes__palette .dishes__details li {
+    font-size: 0.7em;
+  }
+  .dishes__palette .prices li {
+    font-size: 0.7em;
   }
   .dishes__palette li {
     font-size: 0.7em;
