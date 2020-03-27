@@ -48,7 +48,8 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
 @mixin parameter
 {
     height: 600px;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     box-shadow: 0px 0px 29px -5px rgba(0,0,0,1);
     @include center;
 }
@@ -114,7 +115,11 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 100px 100px 0px 300px;
+    justify-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px;
+    grid-gap: 20px;
 }
 
 .menu1, .menu2, .menu3, .menu4
@@ -756,28 +761,9 @@ h2
         font-size: 3.8em;
     }
             
-    .menu
-    {
-        grid-template-columns: repeat(2, 300px);
-        grid-template-rows: 400px;
-        grid-column-gap: 60px;
-        grid-row-gap: 60px;
-        padding: 40px 60px 0px 60px;
-    }
-            
     .menu1, .menu2, .menu3, .menu4
     {
-        width: auto;
-        height: 400px;
-        margin-bottom: 0px;
-        a
-        {
-            font-size: 1.8em;
-        }
-        span
-        {
-            font-size: 2.4em;
-        }
+        height: 500px;
     }
             
     .menu2 a

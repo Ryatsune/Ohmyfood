@@ -56,12 +56,17 @@ time, mark, audio, video {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  padding: 100px 100px 0px 300px;
+  justify-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px;
+  grid-gap: 20px;
 }
 
 .menu1, .menu2, .menu3, .menu4 {
   height: 600px;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   -webkit-box-shadow: 0px 0px 29px -5px black;
           box-shadow: 0px 0px 29px -5px black;
   display: -webkit-box;
@@ -978,25 +983,8 @@ form {
   .header h1 {
     font-size: 3.8em;
   }
-  .menu {
-    -ms-grid-columns: (300px)[2];
-        grid-template-columns: repeat(2, 300px);
-    -ms-grid-rows: 400px;
-        grid-template-rows: 400px;
-    grid-column-gap: 60px;
-    grid-row-gap: 60px;
-    padding: 40px 60px 0px 60px;
-  }
   .menu1, .menu2, .menu3, .menu4 {
-    width: auto;
-    height: 400px;
-    margin-bottom: 0px;
-  }
-  .menu1 a, .menu2 a, .menu3 a, .menu4 a {
-    font-size: 1.8em;
-  }
-  .menu1 span, .menu2 span, .menu3 span, .menu4 span {
-    font-size: 2.4em;
+    height: 500px;
   }
   .menu2 a {
     font-size: 1.4em;
