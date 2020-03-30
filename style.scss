@@ -1,4 +1,6 @@
-            /*               Reset CSS               */
+                /* ====================================
+                ============== Reset CSS ==============
+                ======================================= */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,9 +18,9 @@ time, mark, audio, video {
 	padding: 0px;
     border: 0px;
 }
-
-            /*               Variables               */
-
+                /* ====================================
+                ============== Variables ==============
+                ======================================= */
 $logo-text: #fdcb46;
 $headband: #579c87;
 $menu1: #fcdfdb;
@@ -34,198 +36,168 @@ $sriracha: 'Sriracha', Arial, Helvetica, sans-serif;
 $bellota: 'Bellota Text', Arial, Helvetica, sans-serif;
 $kalam: 'Kalam', Arial, Helvetica, sans-serif;
 $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
+$wiggle-intensity: 4%;
 
-            /*               Mixins               */
-
-@mixin center
-{
+                /* ====================================
+                ================ Mixins ===============
+                ======================================= */
+@mixin center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
             
-@mixin parameter
-{
-    height: 600px;
-    width: 450px;
+@mixin parameter {
+    height: 38vw;
+    width: 29%;
     box-shadow: 0px 0px 29px -5px rgba(0,0,0,1);
     @include center;
 }
             
-@mixin zoom
-{
+@mixin zoom {
     color: black;
     @include center;
     transform: scale(1);
     transition: transform 600ms;
-    &:hover .zoom
-        {
+    &:hover .zoom {
             transform: scale(1.05);
             transition: transform 600ms;
             opacity: 0.8;
         }
 }
 
-@mixin transparent
-{
+@mixin transparent {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 
-@mixin effect
-{
+@mixin effect {
     cursor: pointer;
     background-size: 0 100%;
     background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 1%, transparent 4%) no-repeat;
     background-size: 0 100%;
     transition: background-size 0.3s;
-    &:hover
-    {
+    &:hover {
         background-size: 100% 100%;
     }
 }
-
-
-            /*               Acceuil               */
-
-.container
-{
+                /* ====================================
+                =============== Acceuil ===============
+                ======================================= */
+.container {
     width: 100%;
 }
 
-.header
-{
+.header {
     @include center;
     width: 100%;
     height: 14vh;
     background: $headband;
-    h1
-    {
+    .h1 {
         color: $logo-text;
         font-family: $roboto;
         font-size: 5em;
         letter-spacing: -3px;
     }
 }
-
-.menu
-{
+/*
+.menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 100px 100px 0px 300px;
 }
+*/
+.menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 0px;
+    &-list {
+        @include parameter;
+        @include zoom;
+        margin: 40px;
+        &--1 {
+            background-color: $menu1;
+            .fas {
+                font-size: 3.5em;
+                background: linear-gradient(90deg, #f15861, #f78f6a);
+                @include transparent;
+            }
+            a {
+                font-family: $devonshire;
+                font-size: 2.3em;
+                text-decoration: none; // TODO: usefull ? | Oui sinon souligné
+                color: black;
+            }
+        }
+        &--2 {
+            background-color: $menu2;
+            font-family: $croissant;
+            a {
+                font-size: 1.8em;
+                background: linear-gradient(90deg, #d8852e, #905bfd);
+                @include transparent;
+            }
+        }
+        &--3 {
+            background-color: $menu3;
+            font-family: $dancing;
+            a {
+                font-size: 2.7em;
+                background: linear-gradient(90deg, #0431df, #0887fb);
+                @include transparent;
+                padding: 5px;
+            }
+        }
+        &--4 {
+            background-color: $menu4;
+            font-family: $kaushan;
+            a {
+                font-size: 2.4em;
+                background: linear-gradient(90deg, #3d9339, #bfff7e);
+                @include transparent;
+                padding: 10px;
+            }
+        }
+    }
+    &__font {
+        font-size: 3em;
+        font-family: $sriracha;
+        font-weight: 100;
+        /*&--1 {
+            
+        }*/
+        &--2 {
+            font-family: $noto;
+            font-weight: 900;
+            padding-top: 20px;
+            color: #c77412;
+        }
 
-.menu1, .menu2, .menu3, .menu4
-{
-    @include parameter;
-    @include zoom;
-    margin-bottom: 100px;
-}
+        &--3 {
+            color: #0887fb;
+        }
 
-.menu1
-{
-    background-color: $menu1;
-    a
-    {
-        font-family: $devonshire;
-        font-size: 2.3em;
-        text-decoration: none;
-        color: black;
+        &--4 {
+            color: #72bf56;
+        }
+
     }
 }
 
-.fas
-{
-    font-size: 3.5em;
-    background: linear-gradient(90deg, #f15861, #f78f6a);
-    @include transparent;
-}
-
-.menu2
-{
-    background-color: $menu2;
-    font-family: $croissant;
-    a
-    {
-        font-size: 1.8em;
-        background: linear-gradient(90deg, #d8852e, #905bfd);
-        @include transparent;
-    }
-}
-
-.menu3
-{
-    background-color: $menu3;
-    font-family: $dancing;
-    a
-    {
-        font-size: 2.7em;
-        background: linear-gradient(90deg, #0431df, #0887fb);
-        @include transparent;
-        padding: 5px;
-    }
-}
-
-.menu4
-{
-    background-color: $menu4;
-    font-family: $kaushan;
-    a
-    {
-        font-size: 2.4em;
-        background: linear-gradient(90deg, #3d9339, #bfff7e);
-        @include transparent;
-        padding: 10px;
-    }
-}
-
-.menu1-font
-{
-    font-family: $sriracha;
-    font-size: 3em;
-    font-weight: 100;
-}
-
-.menu2-font
-{
-    font-family: $noto;
-    font-size: 3em;
-    font-weight: 900;
-    padding-top: 20px;
-    color: #c77412;
-}
-
-.menu3-font
-{
-    font-family: $sriracha;
-    font-size: 3em;
-    font-weight: 100;
-    color: #0887fb;
-}
-
-.menu4-font
-{
-    font-family: $sriracha;
-    font-size: 3em;
-    font-weight: 100;
-    color: #72bf56;
-}
-
-.zoom
-{
+.zoom {
     @include center;
 }
 
-.btn
-{
+.btn {
     @include center;
     margin-bottom: 150px;
-    &__soon
-    {
+    &__soon {
         @include center;
-        width: 500px;
+        width: 30%;
         height: 7vh;
         background-color: #579c87;
         margin: 50px 0px;
@@ -233,10 +205,9 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
         color: $logo-text;
         font-size: 2.7em;
     }
-    &__send
-    {
+    &__send {
         @include center;
-        width: 100px;
+        width: 15%;
         height: 4vh;
         background-color: #579c87;
         border-radius: 10px;
@@ -245,45 +216,33 @@ $noto: 'Noto Serif', Arial, Helvetica, sans-serif;
     }
 }
 
-@keyframes dot
-{
-    0%
-    {
+@keyframes dot {
+    0% {
         opacity: 1;
     }
 
-    50%
-    {
+    50% {
         opacity: 0;
     }
 
-    100%
-    {
+    100% {
         opacity: 1;
     }
 }
 
-.child0
-{
-
+.child0 {
     animation: dot 1.5s infinite;
-
 }
 
-.child1
-{
+.child1 {
     animation: dot 1.4s infinite .7s;
 }
 
-.child2
-{
+.child2 {
     animation: dot 1.4s infinite 1s;
 }
 
-$wiggle-intensity: 4%;
-
-.footer
-{
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -293,8 +252,7 @@ $wiggle-intensity: 4%;
     margin-top: 50px;
     position: fixed;
     bottom: 0;
-    a
-    {
+    a {
         color: $logo-text;
         font-size: 2.3em;
         margin: 0px 40px;
@@ -303,54 +261,47 @@ $wiggle-intensity: 4%;
     }
 }
 
-@keyframes wiggle
-{
+@keyframes wiggle {
     0% {
         transform: translateX(0);
     }
     1% {
         transform: translateX(-$wiggle-intensity);
     }
-    7%{
+    7% {
         transform: translateX($wiggle-intensity);
     }
-    11%{
+    11% {
         transform: translateX(0);
     }
 }
-
-            /*               Mentions légales               */
-
-.mentions
-{
+                /* ====================================
+                =========== Mentions légales ==========
+                ======================================= */
+.base {
     display: flex;
     flex-direction: column;
     padding: 100px 300px 150px 300px;
+    .h2 {
+        font-size: 2.7em;
+        color: $headband;
+        margin-bottom: 30px;
+    }
+    section
+    {
+        margin: 20px 0px;
+    }
+    h3 {
+        font-size: 1.5em;
+        color: $headband;
+        text-decoration: underline $logo-text;
+        margin-bottom: 10px;
+    }
 }
-
-.mentions section
-{
-    margin: 20px 0px;
-}
-
-h2
-{
-    font-size: 2.7em;
-    margin-bottom: 30px;
-}
-
-.mentions h3
-{
-    font-size: 1.5em;
-    color: $headband;
-    text-decoration: underline $logo-text;
-    margin-bottom: 10px;
-}
-
-            /*               Contactez-nous               */
-
-            form
-{
+                /* ====================================
+                =========== Conctactez-nous ===========
+                ======================================= */
+form {
     border: 1px solid $headband;
     border-radius: 7px;
     padding: 50px;
@@ -358,393 +309,260 @@ h2
     font-family: $bellota;
 }
 
-.contact
-{
-    display: flex;
-    flex-direction: column;
-    padding: 100px 300px 150px 300px;
-    &__under
-    {
+.contact {
+    &__under {
         display: flex;
         flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .h2 {
+        text-decoration: underline $logo-text;
     }
 }
 
-.contact h2
-{
-    color: $headband;
-    text-decoration: underline $logo-text;
-}
-
-.contact div
-{
-    margin-bottom: 30px;
-}
-
-#restaurant, #name, #firstname, #email, #tel, #comment
-{
+#restaurant, #name, #firstname, #email, #tel, #comment {
     border-radius: 7px;
     min-height: 20px;
     padding-left: 5px;
 }
 
-.civil-state
-{
+.identity {
     display: flex;
-    div
-    {
-        margin-right: 200px;
-    }
+    justify-content: space-between;
 }
 
-.join
-{
-    display: flex;
-    div
-    {
-        margin-right: 270px;
-    }
-}
-
-.decoration
-{
+.decoration {
     color: $headband;
     text-decoration: underline $logo-text;
     margin-bottom: 5px;
 }
 
-.required
-{
+.required {
     font-size: 0.5em;
     font-style: italic;
     font-weight: bold;
 }
-
-            /*               La note enchantée               */
-
-.details
-{
+                /* ====================================
+                ========== La note enchantée ==========
+                ======================================= */
+.details {
     @include center;
-    padding: 50px 300px 120px 300px;
+    padding: 50px;
+    margin-bottom: 50px;
 }
 
-.menu1--modif
-{
-    background-color: $menu1;
-    width: 100%;
-}
-
-.title
-{
+.title {
     @include center;
-}
-
-.title__note
-{
-    margin: 20px 0px;
-    h2
-    {
-        font-family: $devonshire;
-        font-size: 4.3em;
-        font-weight: 300;
-    }
-    .fas
-    {
-        padding-top: 50px;
-        font-size: 6.5em;
+    margin: 170px 0px 40px 0px;
+    &__note {
+        margin: 0;
+        h2 {
+            font-family: $devonshire;
+            font-size: 4.3em;
+            font-weight: 300;
+            color: #3d1319;
+        }
+        .fas {
+            padding-top: 100px;
+            font-size: 6.5em;
+        }
     }
 }
 
-.subtitle__note
-{
-    color: #3d1319;
-}
-
-.subtitle__note h3
-{
-    @include center;
-    padding-top: 35px;
-    font-family: $kalam;
-    font-size: 2.7em;
-    font-weight: 400;
-    @include effect;
-}
-
-.line
-{
+.subtitle {
     display: flex;
     @include center;
     flex-direction: row;
     justify-content: space-between;
     margin: 0px 70px;
+    &__note
+    {
+        flex-direction: column;
+        align-items: inherit;
+        color: #3d1319;
+    }
+    .h3
+    {
+        @include center;
+        @include effect;
+        font-size: 1.5em;
+        padding-top: 35px;
+        font-family: $kalam;
+        font-weight: 400;    
+        &--1
+        {
+            font-size: 2.7em;
+        }
+    }
 }
 
-#Calque_1
-{
-    width: 300px;
+.line {
+    display: flex;
+    @include center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.calque {
+    width: 30%;
     margin-top: 30px;
+    &--1 {
+        transform: scaleX(-1);
+    }
 }
 
-#Calque_1-1
-{
-    width: 300px;
-    margin-top: 30px;
-    transform: scaleX(-1);
-}
-
-.dishes
-{
+.dishes {
     display: flex;
     justify-content: space-between;
     padding: 30px 20px 20px 20px;
-    li
-    {
+    li {
         margin: 5px 40px;
         list-style-type: none;
         font-family: $kalam;
         font-size: 1.5em;
     }
+    &__note {
+        padding: inherit;
+        li {
+            margin: 5px 0px;
+        }
+    }
+    .prices {
+        margin-top: 20px;
+    }
 }
 
-.down__note
-{
+.down__note {
     display: flex;
     justify-content: center;
     margin: 80px 0px;
-    h4
-    {
+    h4 {
         padding-left: 20px;
         font-family: $devonshire;
         font-size: 3em;
         font-weight: 300;
     }
-    .fas
-    {
+    .fas {
         font-size: 3.9em;
     }
 }
-
-            /*               Le chic à la française               */
-
-.menu2--modif
-{
-    background-color: $menu2;
-    width: 100%;
-}
-
-.title__chic
-{
-margin: 170px 0px 40px 0px;
-h2
-    {
-        font-family: $croissant;
-        font-size: 3.1em;
-        font-weight: 300;
-        background: linear-gradient(90deg, #d8852e, #905bfd);
-        @include transparent;
+                /* ====================================
+                ======= Le chic à la française ========
+                ======================================= */
+.title {
+    &__chic {
+        h2 {
+            font-family: $croissant;
+            font-size: 3.1em;
+            font-weight: 300;
+            background: linear-gradient(90deg, #d8852e, #905bfd);
+            @include transparent;    
+        }
     }
 }
 
-.subtitle__chic h3
-{
-    @include center;
-    padding: 60px 0px 2px 0px;
-    font-family: $noto;
-    font-size: 1.7em;
-    font-style: bold;
-    @include effect;
+.h3--2 {
+    font-family: $noto;                     // N'a pas la priorité sur .h3
+    font-size: 1.5em;       // Pourquoi je suis obligé de remettre la taille ?
+    font-weight: 900;                       // Ca ne change rien
 }
 
-.subtitle__chic
-{
-    display: flex;
-    @include center;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0px 70px;
-}
-
-#Calque_2
-{
-    width: 300px;
-    margin-top: 60px;
-}
-
-#Calque_2-1
-{
-    width: 300px;
-    margin-top: 60px;
-    transform: scaleX(-1);
-}
-
-.dishes__chic
-{
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 150px 20px 120px;
-    li
-    {
-        margin: 10px 0px;
-        list-style-type: none;
-        font-family: $noto;
-        font-size: 1.5em;
+.dishes {
+    &--chic {
+        padding: 40px 150px 20px 120px;
+        li {
+            margin: 10px 0px;
+            list-style-type: none;              // doublon class ?
+            font-family: $noto;
+            font-size: 1.5em;                   // doublon class ?
+        }
     }
 }
 
-.color__chic1
-{
+.color__chic1 {
     color: #d8852e;
+    margin-top: 100px;
 }
 
-.color__chic2
-{
+.color__chic2 {
     color: #a56799;
+    margin-top: 50px;
 }
 
-.color__chic3
-{
+.color__chic3 {
     color: #6e4ccc;
+    margin-top: 50px;
 }
-
-            /*               Le délice des papilles               */
-
-.menu3--modif
-{
-    background-color: $menu3;
-    width: 100%;
-}
-
-.title__delice
-{
-    margin: 170px 0px 40px 0px;
-    h2
-        {
+                /* ====================================
+                ======= Le délice des papilles ========
+                ======================================= */
+.title {
+    &__delice {
+        h2 {
             font-family: $dancing;
             font-size: 5.7em;
             font-weight: 400;
             background: linear-gradient(90deg, #0431df, #0887fb);
-            color: transparent;
             @include transparent;
             padding: 10px
         }
-}
-
-.subtitle__delice h3
-{
-    @include center;
-    padding: 60px 0px 2px 0px;
-    font-family: $kalam;
-    font-size: 1.7em;
-    font-weight: 400;
-    @include effect;
-}
-
-.subtitle__delice
-{
-    display: flex;
-    @include center;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0px 70px;
-}
-
-#Calque_3
-{
-    width: 300px;
-    margin-top: 60px;
-}
-
-#Calque_3-1
-{
-    width: 300px;
-    margin-top: 60px;
-    transform: scaleX(-1);
-}
-
-.dishes__delice
-{
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 150px 20px 150px;
-    li
-    {
-        list-style-type: none;
-        font-family: $kalam;
-        font-size: 1.5em;
-        margin: 7px 0px;
     }
 }
 
-            /*               La palette du goût               */
-
-.menu4--modif
-{
-    background-color: $menu4;
-    width: 100%;
-}
-
-.title__palette h2
-{
-    font-family: $kaushan;
-    background: linear-gradient(90deg, #3d9339, #bfff7e);
-    @include transparent;
-    margin: 150px 0px 40px 0px;
-    padding: 10px;
-    font-size: 5.7em;
-    font-weight: 400;
-}
-
-.subtitle__palette h3
-{
-    @include center;
-    padding: 60px 0px 2px 0px;
-    font-family: $kalam;
+.h3--3 {
     font-size: 1.7em;
-    font-weight: 400;
-    @include effect;
 }
 
-.subtitle__palette
+.dishes
 {
-    display: flex;
-    @include center;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0px 70px;
+    &--delice {
+        padding: 40px 150px 20px 150px;
+        li {
+            font-size: 1.5em;
+            margin: 7px 0px;
+        }
+    }
+    &__details {
+        margin: 20px 5px;
+    }
+}
+                /* ====================================
+                ========= La palette du goût ==========
+                ======================================= */
+.title {
+    &__palette {
+        h2
+        {
+            font-family: $kaushan;
+            font-size: 5.7em;                 // doublon delice
+            font-weight: 400;                 // doublon delice
+            background: linear-gradient(90deg, #3d9339, #bfff7e);
+            @include transparent;
+            margin: 150px 0px 40px 0px;
+            padding: 10px;
+        }
+    }
 }
 
-#Calque_4
-{
-    width: 300px;
-    margin-top: 60px;
+.h3--4 {
+    font-size: 1.7em;                      // doublon delice \ ne modif pas
 }
 
-#Calque_4-1
-{
-    width: 300px;
-    margin-top: 60px;
-    transform: scaleX(-1);
-}
-
-.dishes__palette
-{
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 150px 20px 120px;
-    li
-    {
-        list-style-type: none;
-        font-family: $kalam;
-        font-size: 1.5em;
-        margin: 7px 0px;
+.dishes {
+    &__palette {
+        padding: 40px 150px 20px 120px;     // doublon delice
+        li {
+            font-size: 1.5em;                   // doublon delice
+            margin: 7px 0px;                    // doublon delice
+        }
     }
 }
 
             /*               Media Queries               */
-
+/*
 @media screen and (max-width: 1023px)
 {
-        /* Acceuil */
+        // Acceuil 
             
     .container
     {
@@ -800,14 +618,14 @@ h2
         font-size: 1.9em;
     }
 
-        /* Mentions légales */
+        // Mentions légales
 
     .mentions
     {
         padding: 40px 40px 80px 40px;
     }
 
-        /* Contactez-nous */
+        // Contactez-nous
 
     .contact
     {
@@ -822,7 +640,7 @@ h2
         }
     }
     
-        /* La note enchantée */
+        // La note enchantée
 
     .details
     {
@@ -833,7 +651,7 @@ h2
         }
     }
 
-        /* Le chic à la française */
+        // Le chic à la française 
     
     .menu2--modif li
     {
@@ -860,7 +678,7 @@ h2
         }
     }
 
-        /* Le délice des papilles */
+        // Le délice des papilles
     
     .title__delice
     {
@@ -893,7 +711,7 @@ h2
         }
     }
 
-        /* Le délice des papilles */
+        // Le délice des papilles
 
     .title__palette
     {
@@ -936,7 +754,7 @@ h2
            
 }
 
-        /* Acceuil */
+        // Acceuil
 
 @media screen and (max-width: 767px)
 {
@@ -994,7 +812,7 @@ h2
         }
     }
 
-        /* Mentions légales */
+        // Mentions légales
 
     .mentions
     {
@@ -1005,7 +823,7 @@ h2
         }
     }
 
-        /* Contactez-nous */
+        // Contactez-nous
 
     .contact
     {
@@ -1041,7 +859,7 @@ h2
         font-size: 0.5em;
     }
 
-        /* La note enchantée */
+        // La note enchantée
 
     .details
     {
@@ -1099,7 +917,7 @@ h2
         }
     }
 
-        /* Le chic à la française */
+        // Le chic à la française
 
     .menu2--modif
     {
@@ -1141,7 +959,7 @@ h2
         }
     }
 
-        /* Le délice des papilles */
+        // Le délice des papilles
 
     .menu3--modif
     {
@@ -1192,7 +1010,7 @@ h2
         }
     }
 
-        /* La palette du goût */
+        // La palette du goût
 
     .menu4--modif
     {
@@ -1242,4 +1060,4 @@ h2
             font-size: 0.7em;
         }
     }
-}
+} */
