@@ -773,7 +773,6 @@ form {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  margin: 150px 0px 40px 0px;
   padding: 10px;
 }
 
@@ -816,6 +815,66 @@ form {
   /* ====================================
                 ======= Le chic à la française ========
                 ======================================= */
+}
+
+@media screen and (max-width: 768px) {
+  /* ====================================
+                =============== Acceuil ===============
+                ======================================= */
+  .header .h1 {
+    font-size: 4.5em;
+  }
+  .zoom a {
+    font-size: 1.2em;
+  }
+  .footer a {
+    font-size: 2em;
+  }
+  .btn {
+    margin-bottom: 50px;
+  }
+  .btn__soon {
+    font-size: 1.6em;
+  }
+  /* ====================================
+                =========== Mentions légales ==========
+                ======================================= */
+  .base {
+    padding: 60px;
+  }
+  /* ====================================
+                ========== La note enchantée ==========
+                ======================================= */
+  .title h2 {
+    font-size: 4.3em;
+  }
+  .subtitle {
+    margin: 0px 30px;
+  }
+  .subtitle__note {
+    margin: 0px 50px;
+  }
+  .subtitle .h3 {
+    font-size: 1.5em;
+  }
+  .dishes {
+    padding: 40px 70px 20px 70px;
+  }
+  .dishes__note {
+    padding: inherit;
+  }
+  .dishes li {
+    font-size: 1em;
+  }
+  /* ====================================
+                ======= Le chic à la française ========
+                ======================================= */
+  .title__chic h2 {
+    font-size: 2.8em;
+  }
+  .subtitle__chic h3 {
+    font-size: 1.2em;
+  }
 }
 
 /*
