@@ -17,16 +17,18 @@
             <form action="traitement.php" method="post">
                 <section>
                     <div class="contact__under">
-                        <label for="restaurant" class="decoration">Objet du message*</label>
-                        <select name="restaurant" id="restaurant" class="input" required>
-                            <option value="incident">Je souhaite déclarer un incident</option>
-                            <option value="wrongorder">Ce n'est pas ce que j'ai commandé</option>
-                            <option value="information">Je souhaites un renseignement</option>
-                            <option value="companymeal">Je souhaites organiser un repas d'entreprise</option>
+                        <label for="restaurant" class="decoration"></label>
+                        <h3>Objet du message*</h3>
+                        <select name="incident" id="incident" class="input" required>
+                            <option value="">Je souhaite déclarer un incident</option>
+                            <option value="">Ce n'est pas ce que j'ai commandé</option>
+                            <option value="">Je souhaites un renseignement</option>
+                            <option value="">Je souhaites organiser un repas d'entreprise</option>
                         </select>
                     </div>
                     <div class="contact__under">
-                        <label for="restaurant" class="decoration">Choisissez le restaurant concerné dans cette liste*</label>
+                        <h3>Choisissez le restaurant concerné dans cette liste*</h3>
+                        <label for="restaurant" class="decoration"></label>
                         <select name="restaurant" id="restaurant" class="input" required>
                             <option value="note">La note enchantée</option>
                             <option value="chic">Le chic à la française</option>
@@ -37,22 +39,27 @@
                 </section>
                 <section class="identity civil-state">
                     <div class="contact__under contact__under--1">
-                        <label for="name" class="decoration">Nom*</label><input type="text" name="name" id="name" class="input" placeholder="Doe" maxlength="50" autofocus required/> 
+                        <h3>Nom*</h3>
+                        <label for="name" class="decoration"></label><input type="text" name="name" id="name" class="input" placeholder="Doe" maxlength="50" autofocus required/> 
                     </div>
                     <div class="contact__under contact__under--2">
-                        <label for="firstname" class="decoration">Prénom*</label><input type="text" name="firstname" id="firstname" class="input" placeholder="John" maxlength="50" required/> 
+                        <h3>Prénom*</h3>
+                        <label for="firstname" class="decoration"></label><input type="text" name="firstname" id="firstname" class="input" placeholder="John" maxlength="50" required/> 
                     </div>
                 </section>
                 <section class="identity join">
                     <div class="contact__under contact__under--1">
-                        <label for="email" class="decoration">Adresse email*</label><input type="email" id="email" class="input" placeholder="JohnDoe@gmail.com" required>
+                        <h3>Adresse email*</h3>
+                        <label for="email" class="decoration"></label><input type="email" id="email" class="input" placeholder="JohnDoe@gmail.com" required>
                     </div>
                     <div class="contact__under contact__under--2">
-                        <label for="tel" class="decoration">Téléphone*</label><input type="tel" id="tel" class="input" placeholder="06.92.75.33.47">
+                        <h3>Téléphone*</h3>
+                        <label for="tel" class="decoration"></label><input type="tel" id="tel" class="input" placeholder="06.92.75.33.47">
                     </div>
                 </section>
                 <div class="contact__under">
                     <label for="comment" class="decoration">Laisser un commentaire*</label>
+                    
                     <textarea name="comment" id="comment" class="input" placeholder="ex: Erreur de commande ; Délais non respectés... etc" cols="100" rows="15" required></textarea>
                 </div>
                 <div class="btn">
