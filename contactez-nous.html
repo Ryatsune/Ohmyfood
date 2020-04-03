@@ -10,10 +10,10 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>ohmyfood</h1>
+            <h1 class="h1">ohmyfood</h1>
         </header>
-        <main class="contact">
-            <h2>Contactez-nous</h2>
+        <main class="base contact">
+            <h2 class="h2">Contactez-nous</h2>
             <form action="traitement.php" method="post">
                 <section>
                     <div class="contact__under">
@@ -27,7 +27,7 @@
                     </div>
                     <div class="contact__under">
                         <label for="restaurant" class="decoration">Choisissez le restaurant concerné dans cette liste*</label>
-                        <select name="restaurant" id="restaurant" required>
+                        <select name="restaurant" id="restaurant" class="input" required>
                             <option value="note">La note enchantée</option>
                             <option value="chic">Le chic à la française</option>
                             <option value="delice">Le délice des papilles</option>
@@ -35,25 +35,25 @@
                         </select>
                     </div>
                 </section>
-                <section class="civil-state">
-                    <div class="contact__under">
-                        <label for="name" class="decoration">Nom*</label><input type="text" name="name" id="name" placeholder="Doe" size="30" maxlength="10" autofocus required/> 
+                <section class="identity civil-state">
+                    <div class="contact__under contact__under--1">
+                        <label for="name" class="decoration">Nom*</label><input type="text" name="name" id="name" class="input" placeholder="Doe" maxlength="50" autofocus required/> 
                     </div>
-                    <div class="contact__under">
-                        <label for="firstname" class="decoration">Prénom*</label><input type="text" name="firstname" id="firstname" placeholder="John" size="30" maxlength="8" required/> 
+                    <div class="contact__under contact__under--2">
+                        <label for="firstname" class="decoration">Prénom*</label><input type="text" name="firstname" id="firstname" class="input" placeholder="John" maxlength="50" required/> 
                     </div>
                 </section>
-                <section class="join">
-                    <div class="contact__under">
-                        <label for="email" class="decoration">Adresse email*</label><input type="email" id="email" placeholder="JohnDoe@gmail.com" required>
+                <section class="identity join">
+                    <div class="contact__under contact__under--1">
+                        <label for="email" class="decoration">Adresse email*</label><input type="email" id="email" class="input" placeholder="JohnDoe@gmail.com" required>
                     </div>
-                    <div class="contact__under">
-                        <label for="tel" class="decoration">Téléphone*</label><input type="tel" id="tel" placeholder="06.92.75.33.47">
+                    <div class="contact__under contact__under--2">
+                        <label for="tel" class="decoration">Téléphone*</label><input type="tel" id="tel" class="input" placeholder="06.92.75.33.47">
                     </div>
                 </section>
                 <div class="contact__under">
                     <label for="comment" class="decoration">Laisser un commentaire*</label>
-                    <textarea name="comment" id="comment" placeholder="ex: Erreur de commande ; Délais non respectés... etc" cols="100" rows="15" required></textarea>
+                    <textarea name="comment" id="comment" class="input" placeholder="ex: Erreur de commande ; Délais non respectés... etc" cols="100" rows="15" required></textarea>
                 </div>
                 <div class="btn">
                     <input class="btn__send" type="submit" value="Envoyer">
