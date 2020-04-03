@@ -704,6 +704,39 @@ form {
     }
 }
 
+@media screen and (max-width: 580px) {
+
+                /* ====================================
+                =============== General ===============
+                ======================================= */
+    .details {
+        padding: 10px 10px 20px 10px;
+    }
+
+    .dishes {
+        padding: 20px 50px;
+    }
+                /* ====================================
+                ========== La note enchantée ==========
+                ======================================= */
+    .subtitle__note {
+        margin: 0px 30px;
+    }
+
+    .dishes__note {
+        padding: inherit;
+        div {
+            margin: 7px 0px;
+        }
+    }
+                /* ====================================
+                ======= Le chic à la française ========
+                ======================================= */
+    .color__chic--1, .color__chic--2, .color__chic--3 {
+        margin: inherit;
+    }
+}
+
 @media screen and (max-width: 425px) {
 
                 /* ====================================
@@ -741,10 +774,6 @@ form {
                 /* ====================================
                 ========== La note enchantée ==========
                 ======================================= */
-    .details {
-        padding: 10px 10px 20px 10px;
-    }
-
     .title {
         margin: 80px 0px 40px 0px;
         h2 {
@@ -781,9 +810,5 @@ form {
                 ======================================= */
     .dishes {
         padding: 10px;
-    }
-            
-    .color__chic1, .color__chic2, .color__chic3 {
-        margin: inherit;
     }
 }
