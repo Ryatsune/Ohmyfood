@@ -76,8 +76,6 @@ $wiggle-intensity: 4%;
 @mixin effect {
     cursor: pointer;
     background-size: 0 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 1%, transparent 4%) no-repeat;
-    background-size: 0 100%;
     transition: background-size 0.3s;
     &:hover {
         background-size: 100% 100%;
@@ -102,13 +100,7 @@ $wiggle-intensity: 4%;
         letter-spacing: -3px;
     }
 }
-/*
-.menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 100px 100px 0px 300px;
-}
-*/
+
 .menu {
     width: 100%;
     display: flex;
@@ -129,7 +121,7 @@ $wiggle-intensity: 4%;
             a {
                 font-family: $devonshire;
                 font-size: 2.3em;
-                text-decoration: none; // TODO: usefull ? | Oui sinon souligné
+                text-decoration: none;
                 color: black;
             }
         }
@@ -167,9 +159,6 @@ $wiggle-intensity: 4%;
         font-size: 3em;
         font-family: $sriracha;
         font-weight: 100;
-        /*&--1 {
-            
-        }*/
         &--2 {
             font-family: $noto;
             font-weight: 900;
@@ -197,22 +186,20 @@ $wiggle-intensity: 4%;
     margin-bottom: 150px;
     &__soon {
         @include center;
-        width: 30%;
-        height: 7vh;
         background-color: #579c87;
         margin: 50px 0px;
         border-radius: 15px;
         color: $logo-text;
         font-size: 2.7em;
+        padding: 10px 30px;
     }
     &__send {
         @include center;
-        width: 15%;
-        height: 4vh;
         background-color: #579c87;
         border-radius: 10px;
         color: $logo-text;
-        font-size: 0.7em;
+        font-size: 1em;
+        padding: 5px 20px;
     }
 }
 
@@ -314,13 +301,20 @@ form {
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
+        &--1 {
+            width: 50%;
+            padding-right: 50px;
+        }
+        &--2 {
+            width: 50%;
+        }
     }
     .h2 {
         text-decoration: underline $logo-text;
     }
 }
 
-#restaurant, #name, #firstname, #email, #tel, #comment {
+.input {
     border-radius: 7px;
     min-height: 20px;
     padding-left: 5px;
@@ -343,7 +337,7 @@ form {
     font-weight: bold;
 }
                 /* ====================================
-                ========== La note enchantée ==========
+                =============== General ===============
                 ======================================= */
 .details {
     @include center;
@@ -354,18 +348,8 @@ form {
 .title {
     @include center;
     margin: 170px 0px 40px 0px;
-    &__note {
-        margin: 0;
-        h2 {
-            font-family: $devonshire;
-            font-size: 4.3em;
-            font-weight: 300;
-            color: #3d1319;
-        }
-        .fas {
-            padding-top: 100px;
-            font-size: 6.5em;
-        }
+    h2 {
+        text-align: center;
     }
 }
 
@@ -375,32 +359,22 @@ form {
     flex-direction: row;
     justify-content: space-between;
     margin: 0px 70px;
-    &__note
-    {
-        flex-direction: column;
-        align-items: inherit;
-        color: #3d1319;
-    }
     .h3
     {
         @include center;
-        @include effect;
         font-size: 1.5em;
         padding-top: 35px;
         font-family: $kalam;
-        font-weight: 400;    
-        &--1
-        {
-            font-size: 2.7em;
+        font-weight: 400;
+        text-align: center;
+        cursor: pointer;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 1%, transparent 4%) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 0.3s;
+        &:hover {
+            background-size: 100% 100%;
         }
     }
-}
-
-.line {
-    display: flex;
-    @include center;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .calque {
@@ -413,23 +387,52 @@ form {
 
 .dishes {
     display: flex;
-    justify-content: space-between;
-    padding: 30px 20px 20px 20px;
-    li {
-        margin: 5px 40px;
+    flex-direction: column;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
         list-style-type: none;
-        font-family: $kalam;
-        font-size: 1.5em;
     }
-    &__note {
-        padding: inherit;
-        li {
-            margin: 5px 0px;
-        }
+}
+
+                /* ====================================
+                ========== La note enchantée ==========
+                ======================================= */
+.title__note {
+    margin: 0;
+    h2 {
+        font-family: $devonshire;
+        font-size: 4.3em;
+        font-weight: 300;
+        color: #3d1319;
     }
-    .prices {
-        margin-top: 20px;
+        .fas {
+        padding-top: 100px;
+        font-size: 6.5em;
     }
+}
+
+.subtitle__note {
+    flex-direction: column;
+    align-items: inherit;
+    color: #3d1319;
+    .h3--1
+    {
+        font-size: 2.7em;
+    }
+}
+
+.line {
+    display: flex;
+    @include center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dishes__note li {
+    font-family: $kalam;
+    font-size: 1.5em;
 }
 
 .down__note {
@@ -449,72 +452,103 @@ form {
                 /* ====================================
                 ======= Le chic à la française ========
                 ======================================= */
-.title {
-    &__chic {
-        h2 {
-            font-family: $croissant;
-            font-size: 3.1em;
-            font-weight: 300;
-            background: linear-gradient(90deg, #d8852e, #905bfd);
-            @include transparent;    
-        }
+.title__chic h2 {
+    font-family: $croissant;
+    font-size: 3.1em;
+    font-weight: 300;
+    background: linear-gradient(90deg, #d8852e, #905bfd);
+    @include transparent;    
+}
+
+.subtitle .h3--2 {
+    font-family: $noto;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.dishes--chic {
+    padding: 40px 150px 20px 120px;
+    li {
+        margin: 10px 0px;
+        list-style-type: none;
+        font-family: $noto;
+        font-size: 1.5em;
     }
 }
 
-.h3--2 {
-    font-family: $noto;                     // N'a pas la priorité sur .h3
-    font-size: 1.5em;       // Pourquoi je suis obligé de remettre la taille ?
-    font-weight: 900;                       // Ca ne change rien
-}
-
-.dishes {
-    &--chic {
-        padding: 40px 150px 20px 120px;
-        li {
-            margin: 10px 0px;
-            list-style-type: none;              // doublon class ?
-            font-family: $noto;
-            font-size: 1.5em;                   // doublon class ?
-        }
-    }
-}
-
-.color__chic1 {
+.color__chic--1 {
     color: #d8852e;
     margin-top: 100px;
+    .h3--2 {
+        &:hover {
+            @include effect;
+            background: linear-gradient(to top, rgba(216, 133, 46, 0.7) 0%, rgba(216, 133, 46, 0.7) 1%, transparent 4%) no-repeat;
+        }
+    }
 }
 
-.color__chic2 {
+.color__chic--2 {
     color: #a56799;
     margin-top: 50px;
+    .h3--2 {
+        &:hover {
+            @include effect;
+            background: linear-gradient(to top, rgba(165, 103, 153, 0.7) 0%, rgba(165, 103, 153, 0.7) 1%, transparent 4%) no-repeat;
+        }
+    }
 }
 
-.color__chic3 {
+.color__chic--3 {
     color: #6e4ccc;
     margin-top: 50px;
+    .h3--2 {
+        &:hover {
+            @include effect;
+            background: linear-gradient(to top, rgba(110, 76, 204, 0.7) 0%, rgba(110, 76, 204, 0.7) 1%, transparent 4%) no-repeat;
+        }
+    }
 }
                 /* ====================================
                 ======= Le délice des papilles ========
                 ======================================= */
-.title {
-    &__delice {
-        h2 {
-            font-family: $dancing;
-            font-size: 5.7em;
-            font-weight: 400;
-            background: linear-gradient(90deg, #0431df, #0887fb);
-            @include transparent;
-            padding: 10px
+.title__delice h2 {
+    font-family: $dancing;
+    font-size: 5.7em;
+    font-weight: 400;
+    background: linear-gradient(90deg, #0431df, #0887fb);
+    @include transparent;
+    padding: 10px
+}
+
+.color__delice--1 {
+    .h3--3 {
+        font-size: 1.7em;
+        &:hover {
+            @include effect;
+            background: linear-gradient(to top, rgba(2, 40, 221, 0.7) 0%, rgba(2, 40, 221, 0.7) 1%, transparent 4%) no-repeat;
         }
     }
 }
 
-.h3--3 {
-    font-size: 1.7em;
+.color__delice--2 {
+    .h3--3 {
+        &:hover {
+            @include effect;
+            background: linear-gradient(to top, rgba(6, 112, 243, 0.7) 0%, rgba(6, 112, 243, 0.7) 1%, transparent 4%) no-repeat;
+        }
+    }
 }
 
-.dishes
-{
+.color__delice--3 {
+    .h3--3 {
+        &:hover {
+            @include effect;
+            background: linear-gradient(to top, rgba(34, 157, 249, 0.7) 0%, rgba(34, 157, 249, 0.7) 1%, transparent 4%) no-repeat;
+        }
+    }
+}
+
+.dishes {
     &--delice {
         padding: 40px 150px 20px 150px;
         li {
@@ -529,31 +563,30 @@ form {
                 /* ====================================
                 ========= La palette du goût ==========
                 ======================================= */
-.title {
-    &__palette {
-        h2
-        {
-            font-family: $kaushan;
-            font-size: 5.7em;                 // doublon delice
-            font-weight: 400;                 // doublon delice
-            background: linear-gradient(90deg, #3d9339, #bfff7e);
-            @include transparent;
-            padding: 10px;
+.title__palette h2 {
+    font-family: $kaushan;
+    font-size: 5.7em;
+    font-weight: 400;
+    background: linear-gradient(90deg, #3d9339, #bfff7e);
+    @include transparent;
+    padding: 10px;
+}
+
+.color__palette {
+    .h3--4 {
+        font-size: 1.7em;
+        &:hover {
+            @include effect;
+            background: linear-gradient(to top, rgba(65, 150, 60, 0.7) 0%, rgba(202, 252, 156, 0.7) 1%, transparent 4%) no-repeat;
         }
     }
 }
 
-.h3--4 {
-    font-size: 1.7em;                      // doublon delice \ ne modif pas
-}
-
-.dishes {
-    &__palette {
-        padding: 40px 150px 20px 120px;     // doublon delice
-        li {
-            font-size: 1.5em;                   // doublon delice
-            margin: 7px 0px;                    // doublon delice
-        }
+.dishes__palette {
+    padding: 40px 150px 20px 120px;
+    li {
+        font-size: 1.5em;
+        margin: 7px 0px;
     }
 }
 
@@ -579,18 +612,10 @@ form {
                 =========== Mentions légales ==========
                 ======================================= */
     .base {
-        padding: 100px;
+        max-width: 1440px;
+        margin: 35px auto;
+        padding: 2em;
     }
-
-                /* ====================================
-                =========== Conctactez-nous ===========
-                ======================================= */
-
-
-                /* ====================================
-                ======= Le chic à la française ========
-                ======================================= */
-
 }
 
 @media screen and (max-width: 768px) {
@@ -604,6 +629,7 @@ form {
 
     .zoom a {
         font-size: 1.2em;
+        text-align: center;
     }
 
     .footer a {
@@ -623,7 +649,21 @@ form {
     .base {
         padding: 60px;
     }
-
+                /* ====================================
+                =========== Conctactez-nous ===========
+                ======================================= */
+    .contact__under {
+        &--1 {
+            width: 100%;
+            padding: inherit;
+        }
+        &--2 {
+            width: 100%;
+        }
+    }
+    .identity {
+        flex-direction: column;
+    }
                 /* ====================================
                 ========== La note enchantée ==========
                 ======================================= */
@@ -659,12 +699,12 @@ form {
         font-size: 2.8em;
     }
 
-    .subtitle__chic h3 {
+    .subtitle__chic .h3 {
         font-size: 1.2em;
     }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 425px) {
 
                 /* ====================================
                 =============== Acceuil ===============
@@ -676,14 +716,10 @@ form {
     .menu {
         padding: 40px 0px;
         .menu-list {
-            width: 100%;
+            width: 80%;
             height: 40vh;
             margin: 25px;
         }
-    }
-
-    .btn__soon {
-        width: 75%;
     }
 
     .footer a {
@@ -701,14 +737,6 @@ form {
     form {
         font-size: 1em;
         padding: 10px;
-    }
-
-    .identity {
-        flex-direction: column;
-    }
-
-    .btn__send {
-        width: 40%;
     }
                 /* ====================================
                 ========== La note enchantée ==========
@@ -759,506 +787,3 @@ form {
         margin: inherit;
     }
 }
-
-/*
-@media screen and (max-width: 1023px)
-{
-        // Acceuil 
-            
-    .container
-    {
-        width: 100%;
-    }
-            
-    .header h1
-    {
-        font-size: 3.8em;
-    }
-            
-    .menu
-    {
-        grid-template-columns: repeat(2, 300px);
-        grid-template-rows: 400px;
-        grid-column-gap: 60px;
-        grid-row-gap: 60px;
-        padding: 40px 50px 0px 50px;
-    }
-            
-    .menu1, .menu2, .menu3, .menu4
-    {
-        width: auto;
-        height: 400px;
-        margin-bottom: 0px;
-        a
-        {
-            font-size: 1.8em;
-        }
-        span
-        {
-            font-size: 2.4em;
-        }
-    }
-            
-    .menu2 a
-    {
-        font-size: 1.4em;
-    }
-            
-    .btn
-    {
-        margin-bottom: 70px;
-        &__soon
-        {
-            width: 350px;
-            font-size: 1.9em;
-        }
-    }
-
-    .footer a
-    {
-        font-size: 1.9em;
-    }
-
-        // Mentions légales
-
-    .mentions
-    {
-        padding: 40px 40px 80px 40px;
-    }
-
-        // Contactez-nous
-
-    .contact
-    {
-        padding: 40px 20px 80px 20px;
-        .civil-state div
-        {
-            margin-right: 131px;
-        }
-        .join div
-        {
-            margin-right: 200px;
-        }
-    }
-    
-        // La note enchantée
-
-    .details
-    {
-        padding: 10px 10px 70px 10px;
-        .prices li
-        {
-            padding: 10px 0px 15px 0px;
-        }
-    }
-
-        // Le chic à la française 
-    
-    .menu2--modif li
-    {
-        font-size: 1.3em;
-        padding: 10px;
-    }
-
-    .subtitle__chic h3
-    {
-        margin: 0px 10px 0px 20px;
-        font-size: 1.5em;
-    }
-
-    .dishes__chic
-    {
-        padding: 0px;
-        .dishes__details li
-        {
-            padding-bottom: 15px;
-        }
-        .prices li
-        {
-            padding: 0px 0px 15px 0px;
-        }
-    }
-
-        // Le délice des papilles
-    
-    .title__delice
-    {
-        margin: 100px 0px 40px 0px;
-        h2
-        {
-            font-size: 4em;
-        }
-    }
-
-    .subtitle__delice h3
-    {
-        margin-left: 20px;
-        font-size: 1.5em;
-    }
-
-    .dishes__delice
-    {
-        padding: 10px;
-        .dishes__details li
-        {
-            font-size: 1.3em;
-            margin-bottom: 20px;
-        }
-        .prices li
-        {
-            font-size: 1.3em;
-            margin: 0px;
-            padding: 5px 0px 12px 0px;
-        }
-    }
-
-        // Le délice des papilles
-
-    .title__palette
-    {
-        margin: 100px 0px 40px 0px;
-        h2
-        {
-            font-size: 4em;
-            margin: 0px;
-        }
-    }
-
-    .subtitle__palette
-    {
-        margin: 0px 30px;
-        h3
-        {
-            margin: 0px 30px;
-        }
-    }
-
-    .dishes__palette
-    {
-        padding: 10px;
-        .dishes__details li
-        {
-            font-size: 1.3em;
-            margin-bottom: 30px;
-        }
-        .prices li
-        {
-            font-size: 1.3em;
-            margin: 0px;
-        }
-        li
-        {
-            font-size: 1.3em;
-            margin-bottom: 30px;
-        }
-    }
-           
-}
-
-        // Acceuil
-
-@media screen and (max-width: 767px)
-{
-    .container
-    {
-        width: auto;
-    }
-
-    .header
-    {
-        width: 100%;
-        font-size: 0.8em;
-        h1
-        {
-            font-size: 4em;
-        }
-    }
-
-    .menu
-    {
-        grid-template-columns: 95%;
-        grid-template-rows: repeat(4, 300px);
-        grid-row-gap: 2em;
-        padding: 40px 0px 0px 15px;
-    }
-
-    .menu1, .menu2, .menu3, .menu4
-    {
-        width: 95%;
-        height: 100%;
-        margin-left: 8px;
-        .zoom
-        {
-            font-size: 0.7em;
-        }
-    }
-
-    .btn
-    {
-        width: 100%;
-        margin-bottom: 50px;
-        &__soon
-        {
-            width: 70%;
-            font-size: 1em;
-        }
-    }
-
-    .footer
-    {
-        a
-        {
-            font-size: 1em;
-            margin: 0px 5px;
-        }
-    }
-
-        // Mentions légales
-
-    .mentions
-    {
-        padding: 10px 10px 100px 10px;
-        h2
-        {
-            font-size: 2.5em;
-        }
-    }
-
-        // Contactez-nous
-
-    .contact
-    {
-        padding: 10px 10px 100px 10px;
-        h2
-        {
-            font-size: 2.5em;
-        }
-    }
-
-    form
-    {
-        padding: 10px;
-    }
-
-    .civil-state
-    {
-        flex-direction: column;
-    }
-
-    #name, #firstname, #email, #tel
-    {
-        min-width: 270px;
-    }
-
-    .join
-    {
-        flex-direction: column;
-    }
-
-    .decoration, .btn__send
-    {
-        font-size: 0.5em;
-    }
-
-        // La note enchantée
-
-    .details
-    {
-       padding: 0px 0px 50px 0px;
-    }
-
-    .title
-    {
-        font-size: 0.7em;
-        .fas
-        {
-            font-size: 4;
-        }
-    }
-
-    .line
-    {
-        margin: 10px;
-        h3
-        {
-            font-size: 1.3em;
-            width: 100px;
-            padding: 10px;
-        }
-     }
-
-     .dishes
-    {
-        padding: 0px 10px;
-        .dishes__details
-        {
-            padding: 3px 5px 0px 0px;
-        }
-        li
-        {
-            font-size: 0.7em;
-            margin: 0px 0px 10px 0px;
-        }
-        .prices
-        {
-            li
-            {
-                padding: 5px 0px;
-            }
-        }
-    }
-
-    .down__note
-    {
-        font-size: 0.7em;
-        margin: 40px 0px;
-        .fas
-        {
-            font-size: 4;
-        }
-    }
-
-        // Le chic à la française
-
-    .menu2--modif
-    {
-        margin-bottom: 15px;
-    }
-
-    .title__chic
-    {
-        margin: 100px 0px 40px 0px;
-        h2
-        {
-            font-size: 2.5em;
-        }
-    }
-
-    .subtitle__chic
-    {
-
-        padding: 10px;
-        margin: 0px;
-        h3
-        {
-            padding: 10px 0px 0px 0px;
-            font-size: 0.7em;
-            width: 100px;
-        }
-        #Calque_2, #Calque_2-1
-        {
-            width: 90px;
-        }
-    }
-
-    .dishes__chic
-    {
-        padding: 10px;
-        li
-        {
-            font-size: 0.7em;
-        }
-    }
-
-        // Le délice des papilles
-
-    .menu3--modif
-    {
-        margin-bottom: 15px;
-    }
-
-    .title__delice
-    {
-        margin: 100px 0px 0px 0px;
-        h2
-        {
-            font-size: 3.6em;
-            padding: 10px;
-        }
-    }
-
-    .subtitle__delice
-    {
-        padding: 10px;
-        margin: 0px;
-        h3
-        {
-            padding: 10px 0px 0px 0px;
-            font-size: 0.7em;
-            width: 100px;
-        }
-        #Calque_3, #Calque_3-1
-        {
-            width: 90px;
-        }
-    }
-
-    .dishes__delice
-    {
-        padding: 10px;
-        .dishes__details li
-        {
-            font-size: 0.7em;
-        }
-        .prices li
-        {
-            font-size: 0.7em;
-            padding-bottom: 8px;
-        }
-        li
-        {
-            font-size: 0.7em;
-        }
-    }
-
-        // La palette du goût
-
-    .menu4--modif
-    {
-        margin-bottom: 15px;
-    }
-
-    .title__palette
-    {
-        margin: 100px 0px 0px 0px;
-        h2
-        {
-            margin: 0px 0px 40px 0px;
-            font-size: 3.6em;
-            padding: 10px;
-        }
-    }
-
-    .subtitle__palette
-    {
-        padding: 10px;
-        margin: 0px;
-        h3
-        {
-            padding: 10px 0px 0px 0px;
-            font-size: 0.9em;
-            width: 100px;
-        }
-        #Calque_4, #Calque_4-1
-        {
-            width: 90px;
-        }
-    }
-
-    .dishes__palette
-    {
-        padding: 10px;
-        .dishes__details li
-        {
-            font-size: 0.7em;
-        }
-        .prices li
-        {
-            font-size: 0.7em;
-        }
-        li
-        {
-            font-size: 0.7em;
-        }
-    }
-} */
