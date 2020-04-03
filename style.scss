@@ -69,8 +69,8 @@ $wiggle-intensity: 4%;
 
 @mixin transparent {
     color: transparent;
+    background-clip: border-box;
     -webkit-background-clip: text;
-    //background-clip: text;
 }
 
 @mixin effect {
