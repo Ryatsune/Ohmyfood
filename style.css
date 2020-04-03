@@ -855,6 +855,18 @@ form {
   padding: 10px;
 }
 
+.stop1 {
+  stop-color: #41963c;
+}
+
+.stop3 {
+  stop-color: #b8fa7c;
+}
+
+#svg {
+  fill: url(#Gradient2);
+}
+
 .color__palette .h3--4 {
   font-size: 1.7em;
 }
