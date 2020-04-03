@@ -74,7 +74,7 @@ time, mark, audio, video {
 
 .menu-list {
   height: 38vw;
-  width: 29%;
+  width: 31%;
   -webkit-box-shadow: 0px 0px 29px -5px black;
           box-shadow: 0px 0px 29px -5px black;
   display: -webkit-box;
@@ -900,6 +900,7 @@ form {
                 ======================================= */
   .menu-list a {
     font-size: 1.5em;
+    text-align: center;
   }
   .menu__font {
     font-size: 2em;
@@ -996,6 +997,17 @@ form {
 
 @media screen and (max-width: 580px) {
   /* ====================================
+                =============== Acceuil ===============
+                ======================================= */
+  .menu .menu-list {
+    width: 50%;
+    height: 60vw;
+    margin: 25px;
+  }
+  .footer a {
+    font-size: 1.3em;
+  }
+  /* ====================================
                 =============== General ===============
                 ======================================= */
   .details {
@@ -1040,7 +1052,7 @@ form {
     margin: 25px;
   }
   .footer a {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   /* ====================================
                 =========== Mentions légales ==========

@@ -50,7 +50,7 @@ $wiggle-intensity: 4%;
             
 @mixin parameter {
     height: 38vw;
-    width: 29%;
+    width: 31%;
     box-shadow: 0px 0px 29px -5px rgba(0,0,0,1);
     @include center;
 }
@@ -610,6 +610,7 @@ form {
                 ======================================= */
     .menu-list a {
         font-size: 1.5em;
+        text-align: center;
     }
 
     .menu__font {
@@ -719,6 +720,18 @@ form {
 @media screen and (max-width: 580px) {
 
                 /* ====================================
+                =============== Acceuil ===============
+                ======================================= */
+    .menu .menu-list {
+        width: 50%;
+        height: 60vw;
+        margin: 25px;
+    }
+
+    .footer a {
+        font-size: 1.3em;
+    }
+                /* ====================================
                 =============== General ===============
                 ======================================= */
     .details {
@@ -768,7 +781,7 @@ form {
     }
 
     .footer a {
-        font-size: 1.2em;
+        font-size: 1em;
     }
                 /* ====================================
                 =========== Mentions légales ==========
