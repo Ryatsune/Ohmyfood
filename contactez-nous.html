@@ -17,8 +17,9 @@
             <form action="traitement.php" method="post">
                 <section>
                     <div class="contact__under">
-                        <label for="restaurant" class="decoration">Objet du message*</label>
-                        <select name="restaurant" id="restaurant" class="input" required>
+                        <label for="restaurant" class="decoration"></label>
+                        <h3>Objet du message*</h3>
+                        <select name="incident" id="incident" class="input" required>
                             <option value="incident">Je souhaite déclarer un incident</option>
                             <option value="wrongorder">Ce n'est pas ce que j'ai commandé</option>
                             <option value="information">Je souhaites un renseignement</option>
@@ -26,7 +27,8 @@
                         </select>
                     </div>
                     <div class="contact__under">
-                        <label for="restaurant" class="decoration">Choisissez le restaurant concerné dans cette liste*</label>
+                        <label for="restaurant" class="decoration"></label>
+                        <h3>Choisissez le restaurant concerné dans cette liste*</h3>
                         <select name="restaurant" id="restaurant" class="input" required>
                             <option value="note">La note enchantée</option>
                             <option value="chic">Le chic à la française</option>
