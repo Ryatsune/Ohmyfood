@@ -124,7 +124,6 @@ time, mark, audio, video {
   background: linear-gradient(90deg, #f15861, #f78f6a);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .menu-list--1 a {
@@ -145,7 +144,6 @@ time, mark, audio, video {
   background: linear-gradient(90deg, #d8852e, #905bfd);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .menu-list--3 {
@@ -159,7 +157,6 @@ time, mark, audio, video {
   background: linear-gradient(90deg, #0431df, #0887fb);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   padding: 5px;
 }
 
@@ -174,7 +171,6 @@ time, mark, audio, video {
   background: linear-gradient(90deg, #3d9339, #bfff7e);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   padding: 10px;
 }
 
@@ -700,7 +696,6 @@ form {
   background: linear-gradient(90deg, #d8852e, #905bfd);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .subtitle .h3--2 {
@@ -785,7 +780,6 @@ form {
   background: linear-gradient(90deg, #0431df, #0887fb);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   padding: 10px;
 }
 
@@ -856,7 +850,6 @@ form {
   background: linear-gradient(90deg, #3d9339, #bfff7e);
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   padding: 10px;
 }
 
