@@ -868,7 +868,7 @@ form {
   stop-color: #b8fa7c;
 }
 
-#svg {
+.svg {
   fill: url(#Gradient2);
 }
 
