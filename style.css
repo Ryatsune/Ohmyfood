@@ -251,6 +251,7 @@ time, mark, audio, video {
   border-radius: 15px;
   color: #fdcb46;
   font-size: 2.7em;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   padding: 10px 30px;
 }
 
@@ -335,6 +336,7 @@ time, mark, audio, video {
 .footer a {
   color: #fdcb46;
   font-size: 2.3em;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin: 0px 40px;
   text-decoration: none;
   -webkit-animation: wiggle 700ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite alternate;
@@ -607,6 +609,10 @@ form {
   list-style-type: none;
 }
 
+.dishes .weight500 {
+  font-weight: 500;
+}
+
 /* ====================================
                 ========== La note enchantée ==========
                 ======================================= */
@@ -839,6 +845,7 @@ form {
 .dishes--delice li {
   font-size: 1.5em;
   margin: 7px 0px;
+  font-family: "Kalam", Arial, Helvetica, sans-serif;
 }
 
 .dishes__details {
@@ -896,6 +903,7 @@ form {
 .dishes__palette li {
   font-size: 1.5em;
   margin: 7px 0px;
+  font-family: "Kalam", Arial, Helvetica, sans-serif;
 }
 
 /* ========= Media Queries ============ */
@@ -935,7 +943,7 @@ form {
     text-align: center;
   }
   .footer a {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .btn {
     margin-bottom: 50px;

@@ -191,6 +191,7 @@ $wiggle-intensity: 4%;
         border-radius: 15px;
         color: $logo-text;
         font-size: 2.7em;
+        font-family: $roboto;
         padding: 10px 30px;
     }
     &__send {
@@ -242,6 +243,7 @@ $wiggle-intensity: 4%;
     a {
         color: $logo-text;
         font-size: 2.3em;
+        font-family: $roboto;
         margin: 0px 40px;
         text-decoration: none;
         animation: wiggle 700ms cubic-bezier(.4,.1,.6,.9) infinite alternate;
@@ -397,6 +399,9 @@ form {
         justify-content: space-between;
         padding: 0px 10px;
         list-style-type: none;
+    }
+    .weight500 {
+        font-weight: 500;
     }
 }
 
@@ -558,6 +563,7 @@ form {
         li {
             font-size: 1.5em;
             margin: 7px 0px;
+            font-family: $kalam;
         }
     }
     &__details {
@@ -603,6 +609,7 @@ form {
     li {
         font-size: 1.5em;
         margin: 7px 0px;
+        font-family: $kalam;
     }
 }
 
@@ -650,7 +657,7 @@ form {
     }
 
     .footer a {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .btn {
