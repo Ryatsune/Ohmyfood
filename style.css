@@ -647,6 +647,10 @@ form {
   font-size: 2.7em;
 }
 
+.subtitle__note .cls-1 {
+  fill: #40171d;
+}
+
 .line {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -744,6 +748,10 @@ form {
   background-size: 100% 100%;
 }
 
+.color__chic--1 .cls-2--1 {
+  fill: #d18f44;
+}
+
 .color__chic--2 {
   color: #a56799;
   margin-top: 50px;
@@ -762,6 +770,10 @@ form {
   background-size: 100% 100%;
 }
 
+.color__chic--2 .cls-2--2 {
+  fill: #a56799;
+}
+
 .color__chic--3 {
   color: #6e4ccc;
   margin-top: 50px;
@@ -778,6 +790,10 @@ form {
 
 .color__chic--3 .h3--2:hover:hover {
   background-size: 100% 100%;
+}
+
+.color__chic--3 .cls-2--3 {
+  fill: #6e4ccc;
 }
 
 /* ====================================
@@ -812,6 +828,10 @@ form {
   background-size: 100% 100%;
 }
 
+.color__delice--1 .cls-3--1 {
+  fill: #0431df;
+}
+
 .color__delice--2 .h3--3:hover {
   cursor: pointer;
   background-size: 0 100%;
@@ -825,6 +845,10 @@ form {
   background-size: 100% 100%;
 }
 
+.color__delice--2 .cls-3--2 {
+  fill: #0670f3;
+}
+
 .color__delice--3 .h3--3:hover {
   cursor: pointer;
   background-size: 0 100%;
@@ -836,6 +860,10 @@ form {
 
 .color__delice--3 .h3--3:hover:hover {
   background-size: 100% 100%;
+}
+
+.color__delice--3 .cls-3--3 {
+  fill: #229df9;
 }
 
 .dishes--delice {
