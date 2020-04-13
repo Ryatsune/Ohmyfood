@@ -93,11 +93,12 @@ $wiggle-intensity: 4%;
     width: 100%;
     height: 14vh;
     background: $headband;
-    .h1 {
-        color: $logo-text;
+    .h1 a {
         font-family: $roboto;
-        font-size: 5em;
+        font-size: 3em;
         letter-spacing: -3px;
+        color: $logo-text;
+        text-decoration: none;
     }
 }
 
@@ -203,7 +204,7 @@ $wiggle-intensity: 4%;
         padding: 5px 20px;
     }
 }
-
+ /* Animation des points de suspension */
 @keyframes dot {
     0% {
         opacity: 1;
@@ -250,6 +251,7 @@ $wiggle-intensity: 4%;
     }
 }
 
+/* Animation mentions légales et contactez-nous */
 @keyframes wiggle {
     0% {
         transform: translateX(0);
@@ -668,10 +670,6 @@ form {
                 /* ====================================
                 =============== Acceuil ===============
                 ======================================= */
-    .header .h1 {
-        font-size: 4.5em;
-    }
-
     .zoom a {
         font-size: 1.2em;
         text-align: center;
@@ -754,6 +752,10 @@ form {
                 /* ====================================
                 =============== Acceuil ===============
                 ======================================= */
+    .header .h1 a {
+        font-size: 2.5em;
+    }
+    
     .menu .menu-list {
         width: 50%;
         height: 60vw;
@@ -799,8 +801,8 @@ form {
                 /* ====================================
                 =============== Acceuil ===============
                 ======================================= */
-    .header .h1 {
-        font-size: 4em;
+    .header .h1 a {
+        font-size: 2em;
     }
 
     .menu {

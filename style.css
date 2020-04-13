@@ -52,11 +52,12 @@ time, mark, audio, video {
   background: #579c87;
 }
 
-.header .h1 {
-  color: #fdcb46;
+.header .h1 a {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 5em;
+  font-size: 3em;
   letter-spacing: -3px;
+  color: #fdcb46;
+  text-decoration: none;
 }
 
 .menu {
@@ -276,6 +277,7 @@ time, mark, audio, video {
   padding: 5px 20px;
 }
 
+/* Animation des points de suspension */
 @-webkit-keyframes dot {
   0% {
     opacity: 1;
@@ -287,7 +289,6 @@ time, mark, audio, video {
     opacity: 1;
   }
 }
-
 @keyframes dot {
   0% {
     opacity: 1;
@@ -343,6 +344,7 @@ time, mark, audio, video {
           animation: wiggle 700ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite alternate;
 }
 
+/* Animation mentions légales et contactez-nous */
 @-webkit-keyframes wiggle {
   0% {
     -webkit-transform: translateX(0);
@@ -361,7 +363,6 @@ time, mark, audio, video {
             transform: translateX(0);
   }
 }
-
 @keyframes wiggle {
   0% {
     -webkit-transform: translateX(0);
@@ -963,9 +964,6 @@ form {
   /* ====================================
                 =============== Acceuil ===============
                 ======================================= */
-  .header .h1 {
-    font-size: 4.5em;
-  }
   .zoom a {
     font-size: 1.2em;
     text-align: center;
@@ -1040,6 +1038,9 @@ form {
   /* ====================================
                 =============== Acceuil ===============
                 ======================================= */
+  .header .h1 a {
+    font-size: 2.5em;
+  }
   .menu .menu-list {
     width: 50%;
     height: 60vw;
@@ -1081,8 +1082,8 @@ form {
   /* ====================================
                 =============== Acceuil ===============
                 ======================================= */
-  .header .h1 {
-    font-size: 4em;
+  .header .h1 a {
+    font-size: 2em;
   }
   .menu {
     padding: 40px 0px;
