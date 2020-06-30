@@ -9,13 +9,16 @@
 </head>
 <body>
     <div class="container">
+        <!-- ========== Header ============ -->
         <header class="header">
             <h1 class="h1"><a href="index.html">ohmyfood</a></h1>
         </header>
+        <!-- ========== Formulaire ============ -->
         <main class="base contact">
             <h2 class="h2">Contactez-nous</h2>
             <form action="traitement.php" method="post">
                 <section>
+                    <!-- Objet du message -->
                     <div class="contact__under">
                         <label for="restaurant" class="decoration"></label>
                         <h3>Objet du message*</h3>
@@ -26,6 +29,7 @@
                             <option value="">Je souhaites organiser un repas d'entreprise</option>
                         </select>
                     </div>
+                    <!-- Liste des restaurants -->
                     <div class="contact__under">
                         <h3>Choisissez le restaurant concerné dans cette liste*</h3>
                         <label for="restaurant" class="decoration"></label>
@@ -37,6 +41,7 @@
                         </select>
                     </div>
                 </section>
+                <!-- Informations personnelles -->
                 <section class="identity civil-state">
                     <div class="contact__under contact__under--1">
                         <h3>Nom*</h3>
@@ -47,6 +52,7 @@
                         <label for="firstname" class="decoration"></label><input type="text" name="firstname" id="firstname" class="input" placeholder="John" maxlength="50" required/> 
                     </div>
                 </section>
+                <!-- Données personnelles -->
                 <section class="identity join">
                     <div class="contact__under contact__under--1">
                         <h3>Adresse email*</h3>
@@ -57,17 +63,20 @@
                         <label for="tel" class="decoration"></label><input type="tel" id="tel" class="input" placeholder="06.92.75.33.47">
                     </div>
                 </section>
+                <!-- Commentaire -->
                 <div class="contact__under">
                     <label for="comment" class="decoration">Laisser un commentaire*</label>
                     
                     <textarea name="comment" id="comment" class="input" placeholder="ex: Erreur de commande ; Délais non respectés... etc" cols="100" rows="15" required></textarea>
                 </div>
+                <!-- Bouton envoyer -->
                 <div class="btn">
                     <input class="btn__send" type="submit" value="Envoyer">
                 </div>
                 <p class="required">*champ obligatoire</p>
             </form>
         </main>
+        <!-- ========== Footer ============ -->
         <footer class="footer">
             <a href="mentions_legales.html" target="_blank"> Mentions légales</a>
             <a href="contactez-nous.html" target="_blank"> Contactez-nous</a>
